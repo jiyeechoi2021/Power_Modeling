@@ -17,7 +17,9 @@ def preserve():
 def snapshot(check=False):
     protected=preserve()
     out=ROOT/'provenance/SHA256SUMS.txt';inventory=ROOT/'provenance/file_inventory.txt'
-    files=sorted(p for p in ROOT.rglob('*') if p.is_file() and not any(x in ('build','runtime','__pycache__') for x in p.relative_to(ROOT).parts[:-1]))
+    files=sorted(p for p in ROOT.rglob('*') if p.is_file()
+                 and p.relative_to(ROOT).parts[0] not in ('build','runtime')
+                 and '__pycache__' not in p.relative_to(ROOT).parts[:-1])
     files=sorted(set(files+[out,inventory]))
     if any(p.is_symlink() for p in files):raise ValueError('unexpected artifact symlink')
     listing=''.join(str(p.relative_to(ROOT))+'\n' for p in files)

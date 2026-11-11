@@ -7,6 +7,7 @@ import io
 from pathlib import Path
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -102,6 +103,13 @@ class PreservationTests(unittest.TestCase):
 
     def test_baseline_preservation_manifest(self):
         self.assertEqual(manifest.preserve(),226)
+
+    def test_manifest_inventory_covers_all_tracked_phase2_files(self):
+        names=subprocess.check_output(['git','-C',str(ROOT.parent),'ls-files','NSCache_Phase2A'],text=True).splitlines()
+        tracked={str(Path(n).relative_to('NSCache_Phase2A')) for n in names}
+        inventory=set((ROOT/'provenance/file_inventory.txt').read_text().splitlines())
+        self.assertEqual(inventory,tracked)
+        self.assertIn('logs/build/stdout.log',inventory)
 
 
 if __name__=='__main__':unittest.main()

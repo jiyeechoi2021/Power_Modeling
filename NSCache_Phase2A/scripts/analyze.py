@@ -240,7 +240,7 @@ def report(new,comparisons,scales,scale_compare,org_comparison,seven,components)
         '- 가설과 한계: 개별 회로의 인과 기여율은 고정 조직 대조 실험 없이 확정하지 않는다. tag+data는 cache-hit 식에서 합산되지만 summary는 1pJ 간격이라 세부 pJ 합과 미세하게 다를 수 있다. Routing/peripheral/cell 분해는 겹치는 계층이며 전체를 서로 배타적인 기여도로 제시하지 않는다.',
         '- Width별 SF 차이는 상대 overhead와 재최적화 조직 변화가 node마다 달라 생길 수 있다. 전압·cell 모델 차이도 남아 있으므로 어느 폭의 SF도 Pure Process Scaling이 아니다.',
         '', '## 재현성·정규화·결론','',
-        f"새 7nm 실행 4개의 6개 지표는 기존 Phase 1 256bit 실행과 {sum(x['all_six_exact'] for x in seven)}/4 일치했다. [기존 로그와의 비교](../results/phase1_7nm_replay_comparison.csv).", 
+        f"새 7nm 실행 4개의 6개 지표는 기존 Phase 1 256bit 실행과 {sum(x['all_six_exact'] for x in seven)}/4 일치했다. [기존 로그와의 비교](../results/phase1_7nm_replay_comparison.csv).",
         '`E_NS_bit=E_NS_access/256`, `E_GPU_sector=E_GPU_bit×256`은 단위 정렬이다. 동일한 물리 경계라는 뜻이 아니다. GPU read/write·hit/miss counter, multi-sector tag 재사용, coalescing/replay, miss fill/writeback 및 energy coefficient의 측정/회귀 경계를 먼저 확인해야 한다.',
         '내부 GPU 계수·실측 에너지·회사 자료·비공개 검증 결과는 사용하거나 저장하지 않았다. GPU sector 구조의 근거/미확인 사항과 Phase 2-B 제안은 [feasibility 보고서](gpu_sector_modeling_feasibility.md)를 따른다.']
     (ROOT/'reports/phase2_256bit_energy_analysis.md').write_text('\n'.join(lines)+'\n')

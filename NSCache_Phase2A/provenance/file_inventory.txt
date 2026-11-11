@@ -16,6 +16,10 @@ configs/phase2_256bit/L2_5nm.cfg
 configs/phase2_256bit/L2_5nm_ReadEnergy.cfg
 configs/phase2_256bit/L2_7nm.cfg
 configs/phase2_256bit/L2_7nm_ReadEnergy.cfg
+logs/build/binary.sha256
+logs/build/environment.json
+logs/build/stderr.log
+logs/build/stdout.log
 logs/phase2_256bit/L1_14nm/20261111T095654.943244Z/environment.json
 logs/phase2_256bit/L1_14nm/20261111T095654.943244Z/metadata.json
 logs/phase2_256bit/L1_14nm/20261111T095654.943244Z/stderr.log
