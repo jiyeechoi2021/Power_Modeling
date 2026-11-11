@@ -1,0 +1,32 @@
+[
+  {
+    "path": "source/LICENSE",
+    "upstream_path": "LICENSE",
+    "commit": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "sha256": "e4b79dc61de4e3d33fbe4dec9235218aa7faf9de63e69ebb5ee48f17855b8088"
+  },
+  {
+    "path": "source/LICENSE_CACTI3DD",
+    "upstream_path": "LICENSE_CACTI3DD",
+    "commit": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "sha256": "5802f2f0a864ff59cc779d383d4152c0bbd4a42a4c33e2d5abe04caadede074e"
+  },
+  {
+    "path": "source/LICENSE_DESTINY",
+    "upstream_path": "LICENSE_DESTINY",
+    "commit": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "sha256": "468690775b459d73ec39d63cebbe526440143d3c72d49789bd94d96b080eecd9"
+  },
+  {
+    "path": "source/LICENSE_NVSim",
+    "upstream_path": "LICENSE_NVSim",
+    "commit": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "sha256": "6761e61e0a792b7f0ce7f4bef9515575d6b1a4a86108f76ddfe1be9fc2c431c5"
+  },
+  {
+    "path": "provenance/upstream_README.md",
+    "upstream_path": "README.md",
+    "commit": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "sha256": "5ae5d5077523f4f16f5efcef1ca83cc82683eb03818251c200706fab433d44c6"
+  }
+]

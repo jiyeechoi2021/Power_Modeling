@@ -1,0 +1,17 @@
+run_id,rerun_status,equality,read_pj_per_access,write_pj_per_access,leakage_mw,hit_latency_ns,area_mm2,feasible_solutions
+L1_14nm,FINISHED,MATCH,74.0,58.0,0.031,0.434,0.149,2.0
+L1_7nm,MISSING,NOT_TESTED,,,,,,
+L1_5nm,FINISHED,MATCH,32.0,24.0,0.035,0.873,0.045,17.0
+L1_3nm,MISSING,NOT_TESTED,,,,,,
+L1_14nm_ReadEnergy,FINISHED,MATCH,66.0,51.0,0.027,0.447,0.129,2.0
+L1_7nm_ReadEnergy,MISSING,NOT_TESTED,,,,,,
+L1_5nm_ReadEnergy,FINISHED,MATCH,29.0,21.0,0.033,1.023,0.04,17.0
+L1_3nm_ReadEnergy,MISSING,NOT_TESTED,,,,,,
+L2_14nm,MISSING,NOT_TESTED,,,,,,
+L2_7nm,MISSING,NOT_TESTED,,,,,,
+L2_5nm,MISSING,NOT_TESTED,,,,,,
+L2_3nm,MISSING,NOT_TESTED,,,,,,
+L2_14nm_ReadEnergy,FINISHED,MATCH,191.0,149.0,0.18,1.775,0.873,17.0
+L2_7nm_ReadEnergy,MISSING,NOT_TESTED,,,,,,
+L2_5nm_ReadEnergy,MISSING,NOT_TESTED,,,,,,
+L2_3nm_ReadEnergy,MISSING,NOT_TESTED,,,,,,

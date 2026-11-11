@@ -1,0 +1,21 @@
+{
+  "config_sha256": "e3d3544bd1416c06c6b51581e3489098ff81a78e2e6625d03d56f164ac8f6220",
+  "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "cell_sha256": "9b8dddb3472a310d162587a327ed9d930862974bb9ef4c6a398552e55f5eafff",
+  "run_id": "L1_7nm",
+  "started_utc": "2026-11-11T02:15:48.654873+00:00",
+  "config": "configs/diagnostic_512bit/L1_7nm.cfg",
+  "command": [
+    "build/nsc",
+    "config/diagnostic_512bit/L1_7nm.cfg"
+  ],
+  "cwd": "runtime/diagnostic_512bit/L1_7nm",
+  "input_origin": "reconstructed; not historical original",
+  "environment_sha256": "6f497acc75034782359b974657e4de4cbe93ed98f930a70aa489cd2884aa1a23",
+  "returncode": 0,
+  "status": "FINISHED",
+  "finished_utc": "2026-11-11T02:15:59.760925+00:00",
+  "elapsed_seconds": 11.105321817999993,
+  "stdout_sha256": "cb6c01ed5bd3313407f190c5dcbe1602be7d7fc3848f0316bfac445355e8bb5c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
