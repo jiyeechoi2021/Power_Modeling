@@ -3,20 +3,49 @@
 아래는 새 실행에서 얻은 NS-Cache 모델값이다. NVIDIA GPU 실측값, 검증된 process-only ground truth, Rubin 예측이 아니다.
 SF(a→b)=E_b/E_a; 감소율=100×(1−SF). read/write와 L1/L2를 분리했다. 0.001 nJ 단위로 반올림된 출력값을 사용하므로 표시 자릿수 이상의 정확도를 주장하지 않는다. 기초값과 로그 경로: [scaling.csv](../results/scaling.csv).
 
-## Scaling matrix
+## As-Reconstructed Input Scaling Matrix
+
+기존 16개 재현 입력·로그를 그대로 사용했다. 7nm는 256bit, 14/5/3nm는 512bit다. 기존 수치를 보존하며 각 SF 링크는 해당 수식과 raw log/configuration 근거로 이어진다. [24개 SF CSV](../results/scaling.csv).
 
 | Cache | Objective | Energy | 14→7 | 7→5 | 5→3 |
 |---|---|---|---:|---:|---:|
-| L1 | ReadLatency | Read | 0.2432 | 1.7778 | 0.8125 |
-| L1 | ReadLatency | Write | 0.2414 | 1.7143 | 0.7917 |
-| L1 | ReadDynamicEnergy | Read | 0.2424 | 1.8125 | 0.8276 |
-| L1 | ReadDynamicEnergy | Write | 0.2353 | 1.7500 | 0.8571 |
-| L2 | ReadLatency | Read | 0.2312 | 1.7826 | 0.9146 |
-| L2 | ReadLatency | Write | 0.2115 | 1.7879 | 0.9322 |
-| L2 | ReadDynamicEnergy | Read | 0.2251 | 1.7674 | 0.8816 |
-| L2 | ReadDynamicEnergy | Write | 0.2013 | 1.8000 | 0.8704 |
+| L1 | ReadLatency | Read | [0.2432](scaling_matrix_traceability.md#as-l1-lat-read-14-7) | [1.7778](scaling_matrix_traceability.md#as-l1-lat-read-7-5) | [0.8125](scaling_matrix_traceability.md#as-l1-lat-read-5-3) |
+| L1 | ReadLatency | Write | [0.2414](scaling_matrix_traceability.md#as-l1-lat-write-14-7) | [1.7143](scaling_matrix_traceability.md#as-l1-lat-write-7-5) | [0.7917](scaling_matrix_traceability.md#as-l1-lat-write-5-3) |
+| L1 | ReadDynamicEnergy | Read | [0.2424](scaling_matrix_traceability.md#as-l1-energy-read-14-7) | [1.8125](scaling_matrix_traceability.md#as-l1-energy-read-7-5) | [0.8276](scaling_matrix_traceability.md#as-l1-energy-read-5-3) |
+| L1 | ReadDynamicEnergy | Write | [0.2353](scaling_matrix_traceability.md#as-l1-energy-write-14-7) | [1.7500](scaling_matrix_traceability.md#as-l1-energy-write-7-5) | [0.8571](scaling_matrix_traceability.md#as-l1-energy-write-5-3) |
+| L2 | ReadLatency | Read | [0.2312](scaling_matrix_traceability.md#as-l2-lat-read-14-7) | [1.7826](scaling_matrix_traceability.md#as-l2-lat-read-7-5) | [0.9146](scaling_matrix_traceability.md#as-l2-lat-read-5-3) |
+| L2 | ReadLatency | Write | [0.2115](scaling_matrix_traceability.md#as-l2-lat-write-14-7) | [1.7879](scaling_matrix_traceability.md#as-l2-lat-write-7-5) | [0.9322](scaling_matrix_traceability.md#as-l2-lat-write-5-3) |
+| L2 | ReadDynamicEnergy | Read | [0.2251](scaling_matrix_traceability.md#as-l2-energy-read-14-7) | [1.7674](scaling_matrix_traceability.md#as-l2-energy-read-7-5) | [0.8816](scaling_matrix_traceability.md#as-l2-energy-read-5-3) |
+| L2 | ReadDynamicEnergy | Write | [0.2013](scaling_matrix_traceability.md#as-l2-energy-write-14-7) | [1.8000](scaling_matrix_traceability.md#as-l2-energy-write-7-5) | [0.8704](scaling_matrix_traceability.md#as-l2-energy-write-5-3) |
 
-## 새 실행의 energy / area / latency
+## Width-Aligned Scaling Matrix
+
+모든 공정의 WordWidth=512bit로 정렬했다. **7nm만 별도 512bit 진단 4건**을 선택하고 14/5/3nm는 기존 512bit 실행을 그대로 사용한다. 기존 기록값을 입력으로 삼거나 256bit energy를 단순히 두 배로 환산하지 않았다. 이 Matrix는 기존 16개 재현 결과나 재현성 판정을 대체하지 않는다. [24개 SF CSV](../results/scaling_width_aligned.csv).
+
+| Cache | Objective | Energy | 14→7 | 7→5 | 5→3 |
+|---|---|---|---:|---:|---:|
+| L1 | ReadLatency | Read | [0.4595](scaling_matrix_traceability.md#wa-l1-lat-read-14-7) | [0.9412](scaling_matrix_traceability.md#wa-l1-lat-read-7-5) | [0.8125](scaling_matrix_traceability.md#wa-l1-lat-read-5-3) |
+| L1 | ReadLatency | Write | [0.4310](scaling_matrix_traceability.md#wa-l1-lat-write-14-7) | [0.9600](scaling_matrix_traceability.md#wa-l1-lat-write-7-5) | [0.7917](scaling_matrix_traceability.md#wa-l1-lat-write-5-3) |
+| L1 | ReadDynamicEnergy | Read | [0.4697](scaling_matrix_traceability.md#wa-l1-energy-read-14-7) | [0.9355](scaling_matrix_traceability.md#wa-l1-energy-read-7-5) | [0.8276](scaling_matrix_traceability.md#wa-l1-energy-read-5-3) |
+| L1 | ReadDynamicEnergy | Write | [0.4510](scaling_matrix_traceability.md#wa-l1-energy-write-14-7) | [0.9130](scaling_matrix_traceability.md#wa-l1-energy-write-7-5) | [0.8571](scaling_matrix_traceability.md#wa-l1-energy-write-5-3) |
+| L2 | ReadLatency | Read | [0.4372](scaling_matrix_traceability.md#wa-l2-lat-read-14-7) | [0.9425](scaling_matrix_traceability.md#wa-l2-lat-read-7-5) | [0.9146](scaling_matrix_traceability.md#wa-l2-lat-read-5-3) |
+| L2 | ReadLatency | Write | [0.4038](scaling_matrix_traceability.md#wa-l2-lat-write-14-7) | [0.9365](scaling_matrix_traceability.md#wa-l2-lat-write-7-5) | [0.9322](scaling_matrix_traceability.md#wa-l2-lat-write-5-3) |
+| L2 | ReadDynamicEnergy | Read | [0.4346](scaling_matrix_traceability.md#wa-l2-energy-read-14-7) | [0.9157](scaling_matrix_traceability.md#wa-l2-energy-read-7-5) | [0.8816](scaling_matrix_traceability.md#wa-l2-energy-read-5-3) |
+| L2 | ReadDynamicEnergy | Write | [0.3960](scaling_matrix_traceability.md#wa-l2-energy-write-14-7) | [0.9153](scaling_matrix_traceability.md#wa-l2-energy-write-7-5) | [0.8704](scaling_matrix_traceability.md#wa-l2-energy-write-5-3) |
+
+## 두 Matrix의 차이와 폭 혼재 영향
+
+[24개 SF 차이 CSV](../results/scaling_matrix_comparison.csv), [48개 계산식과 20개 실행 근거](scaling_matrix_traceability.md).
+
+- As-Reconstructed의 14→7은 폭이 512→256bit로 줄어 energy 감소가 과장된다. Width-Aligned에서는 7nm energy가 더 커지므로 14→7 SF가 증가하고 감소율은 작아진다.
+- As-Reconstructed의 7→5는 폭이 256→512bit로 늘어 모든 L1/L2·목표·read/write에서 SF>1이다. Width-Aligned에서는 모두 SF<1로 바뀐다. 폭이 섞인 증가 경향을 공정 미세화의 에너지 역효과로 해석하면 안 된다.
+- 5→3은 두 Matrix가 동일한 512bit 실행 두 개를 사용하므로 SF가 정확히 같다. 같은 raw energy 비율을 Decimal로 계산하므로 CSV 비교의 ΔSF도 0이다.
+- 예: L1/ReadLatency/Read의 14→7은 18/74=0.2432에서 34/74=0.4595로, 7→5는 32/18=1.7778에서 32/34=0.9412로 바뀐다. L2/ReadDynamicEnergy/Write의 7→5도 54/30=1.8000에서 54/59=0.9153으로 바뀐다.
+- Width-Aligned에서 read/write는 네 cache/optimization 조합 모두 14→7→5→3에 따라 감소한다. 그러나 이는 해당 모델과 각 node에서 선택된 조직의 기술이며 GPU 일반 법칙이 아니다.
+
+**512bit 정렬 후에도 Pure Process Scaling으로 해석하지 않는다.** Voltage(Vdd 및 cell read-voltage), node별 Cell Parameters(면적·aspect ratio 등), Internal Cache Organization(data/tag bank·mat·subarray·mux·wire·buffer 선택)이 달라진다. 폭 효과 한 가지를 제거한 비교이지 전압·셀·조직을 통제한 공정 단독 인과효과가 아니다. 자세한 파라미터/조직 제한은 아래 절을 따른다.
+
+## As-Reconstructed Input — 새 실행의 energy / area / latency
 
 | Run | Read pJ | Write pJ | Leakage mW | Latency ns | Area mm² | Solutions |
 |---|---:|---:|---:|---:|---:|---:|
@@ -37,7 +66,7 @@ SF(a→b)=E_b/E_a; 감소율=100×(1−SF). read/write와 L1/L2를 분리했다.
 | L2_5nm_ReadEnergy | 76.0 | 54.0 | 0.219 | 2.911 | 0.238 | 16.0 |
 | L2_3nm_ReadEnergy | 67.0 | 47.0 | 0.229 | 2.851 | 0.195 | 15.0 |
 
-## 내부 조직
+## As-Reconstructed Input — 내부 조직
 
 data/tag를 구분하며 상세 활성화·mux·wire/buffer 값은 `parsed_results.json`의 `raw_configuration`과 원본 stdout에 보존한다.
 
@@ -60,7 +89,7 @@ data/tag를 구분하며 상세 활성화·mux·wire/buffer 값은 `parsed_resul
 | L2_5nm_ReadEnergy | 4 x 4 / 2 x 1 / 512 Rows x 512 Columns | 8 x 1 / 2 x 2 / 32 Rows x 544 Columns |
 | L2_3nm_ReadEnergy | 4 x 4 / 2 x 1 / 512 Rows x 512 Columns | 8 x 1 / 2 x 2 / 32 Rows x 544 Columns |
 
-## 경향 및 최적화 trade-off
+## As-Reconstructed Input — 경향 및 최적화 trade-off
 
 재현 입력 그대로의 14→7에서는 read/write가 크게 감소하지만, 7→5에서는 네 cache/objective 조합 모두 증가한다. 이는 256→512bit 폭 변화가 포함된 결과이므로 공정 미세화 자체의 역효과로 해석하지 않는다. 5→3에서는 네 조합 모두 read/write energy가 감소한다.
 5→3 read SF는 L1 latency/energy 목표에서 0.8125/0.8276, L2에서는 0.9146/0.8816이다. Write SF는 각각 0.7917/0.8571 및 0.9322/0.8704이다. 이 모델·선택 조직에서는 L1의 감소폭이 더 크지만 일반 GPU 법칙으로 확장할 수 없다.
@@ -95,7 +124,7 @@ ReadDynamicEnergy 목표는 동일 node의 ReadLatency 목표 대비 read/write 
 
 ## 비교 조건과 해석 한계
 
-- 7nm는 256bit(32-byte line), 14/5/3nm는 512bit(64-byte line)이다. 14→7 및 7→5 비율은 접근 폭/line size 효과가 섞인다. energy를 단순히 bit 수로 정규화해 보정하지 않았다.
+- As-Reconstructed Input의 7nm는 256bit(32-byte line), 14/5/3nm는 512bit(64-byte line)이다. Width-Aligned에서는 7nm 진단도 512bit다. 14→7 및 7→5 비율은 접근 폭/line size 효과가 섞인다. energy를 단순히 bit 수로 정규화해 보정하지 않았다.
 - 용량 L1=128KiB/L2=1024KiB, associativity 8/16, normal cache access, LOP roadmap, 300K, H-tree, internal sensing, 4×4 data-bank 설정, 단일 die 및 latency buffer optimization은 유지된다. 전체 명시 옵션은 configuration_audit.csv/json에 있다.
 - Port count는 입력 파라미터에서 독립적으로 설정된 항목을 확인하지 못했다. 단일 포트라고 추정하지 않는다. 동일 소스 실행이라는 사실과 실제 GPU 포트 구조 동등성은 별개다.
 - 명시 latency/energy/area constraint는 없다. InputParameter 생성자의 clockFreq=3GHz는 기본값이며 고정 hit-latency 제약의 증거가 아니다. ReadDynamicEnergy에서도 BufferDesignOptimization은 latency이다.
@@ -105,7 +134,7 @@ ReadDynamicEnergy 목표는 동일 node의 ReadLatency 목표 대비 read/write 
 
 ## 후속 실험
 
-1. 별도 이름의 controlled sweep에서 line/access width와 포트 요구·동일 latency 제약을 명시하고 512bit 전 공정을 실행한다. 이번 재현 입력은 보존한다.
+1. Width-Aligned Matrix는 기존 512bit 실행들을 조합한 결과다. 후속 controlled sweep은 추가로 포트 요구·동일 latency 제약을 명시하고 조직·전압 조건을 통제해야 한다. 이번 재현 입력은 보존한다.
 2. 고정 조직과 재최적화 조직을 별도 실행하고, data/tag topology 및 wire/buffer를 통제해 architecture 효과를 분리한다.
 3. Vdd·cell·technology 모델 감도 분석과 unrounded 출력 검증을 진행한다. 모델값에 대한 GPU 세대 매핑은 별도 하드웨어 검증이 필요하다.
 4. 원본 workbook/설정/16개 historical stdout를 회수할 수 있으면 출처를 별도 등록한다. Rubin 최종 예측은 이번 단계 범위 밖이다.

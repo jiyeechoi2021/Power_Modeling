@@ -4,6 +4,16 @@ NVIDIA GPU 세대 간 에너지 연구를 위한 후보 모델 검토 단계다.
 
 **현재 결론:** 재구성 입력 16개를 모두 새로 실행했고 12개는 기록값의 6개 지표와 일치했다. 7nm 4개는 불일치한다. 이 입력들만 폭이 256bit이고 다른 공정은 512bit다. 원본을 유지한 별도 512bit 진단 4건은 모두 6개 기록 지표와 정확히 일치했다. 이는 불일치 원인을 설명하지만 historical 원본 복구를 의미하지 않는다.
 
+## 두 Scaling Matrix
+
+- **[As-Reconstructed Input Scaling Matrix](reports/process_scaling_analysis.md#as-reconstructed-input-scaling-matrix)**: 기존 16개 재현 실행을 보존한다. 7nm=256bit, 나머지=512bit. [24개 SF CSV](results/scaling.csv).
+- **[Width-Aligned Scaling Matrix](reports/process_scaling_analysis.md#width-aligned-scaling-matrix)**: 7nm만 별도 512bit 진단으로 선택하고, 다른 공정의 기존 512bit 실행과 조합한다. [24개 SF CSV](results/scaling_width_aligned.csv).
+- [Matrix 차이 24개](results/scaling_matrix_comparison.csv)와 [각 SF의 raw log·configuration·수식 근거](reports/scaling_matrix_traceability.md)를 제공한다. L1/L2, ReadLatency/ReadDynamicEnergy, Read/Write를 분리했다. `SF(a→b)=E_b/E_a`, energy 단위는 pJ/access다.
+
+혼합 폭에서는 7→5 SF가 모두 1보다 크지만, 512bit 정렬 후에는 모두 1보다 작다. 5→3은 두 Matrix에서 동일하다. 정렬하더라도 **Voltage, Cell Parameters, Internal Cache Organization이 달라 Pure Process Scaling이 아니다.** 새로운 재현성 성공 판정, historical 원본 복구 또는 GPU 실측 검증으로 간주하지 않는다.
+
+이번 보완은 기존 로그를 재분석한 문서/분석 CSV 변경뿐이다. 기존 입력·로그·실행/분석 스크립트는 변경하지 않았다. `scripts/analyze.py`는 원래 16개 재현군용이며 재실행하면 `scaling.csv`와 공정 보고서를 원래 형식으로 덮어쓴다. 보완 Matrix의 계산 근거는 traceability 보고서와 CSV에 별도 보존했으므로, 이 보완본을 원래 analyzer의 생성 결과와 혼동하지 않는다. `provenance/artifact_SHA256SUMS.txt`, `directory_inventory.txt`, `reports/changed_files.txt`는 초기 Phase 1 제출 시점의 목록/해시이며 이번 문서·CSV 보완본의 전체 manifest가 아니다. 현재 변경 이력은 Git에서 확인한다.
+
 ## 구조 및 출처
 
 | Directory | Content / origin |
@@ -55,7 +65,8 @@ python3 -m unittest discover -s NSCache_Experiment_DB/tests -v
 ## 읽을 결과
 
 - [재현성 검증 및 96개 지표 비교](reports/reproducibility_validation.md)
-- [Read/Write scaling matrix, 조직 및 trade-off](reports/process_scaling_analysis.md)
+- [두 Read/Write Scaling Matrix, 조직 및 trade-off](reports/process_scaling_analysis.md)
+- [SF별 raw log·configuration·수식 추적](reports/scaling_matrix_traceability.md)
 - [출처, 라이선스 및 누락 자료](provenance/README.md)
 - [후속 연구 원칙](../AGENTS.md)
 
