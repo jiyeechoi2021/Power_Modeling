@@ -1,0 +1,17 @@
+run_id,original_input_recovered,input_status,config_file,original_log_recovered,rerun_log_available,rerun_equal_recorded,original_workbook_status,rerun_log_file
+L1_14nm,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L1_14nm.cfg,NO,YES,YES,PASS,rerun_logs/L1_14nm.log
+L1_7nm,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L1_7nm.cfg,NO,NO,NOT_RUN,PASS,
+L1_5nm,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L1_5nm.cfg,NO,YES,YES,PASS,rerun_logs/L1_5nm.log
+L1_3nm,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L1_3nm.cfg,NO,NO,NOT_RUN,PASS,
+L1_14nm_ReadEnergy,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L1_14nm_ReadEnergy.cfg,NO,YES,YES,PASS,rerun_logs/L1_14nm_ReadEnergy.log
+L1_7nm_ReadEnergy,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L1_7nm_ReadEnergy.cfg,NO,NO,NOT_RUN,PASS,
+L1_5nm_ReadEnergy,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L1_5nm_ReadEnergy.cfg,NO,YES,YES,PASS,rerun_logs/L1_5nm_ReadEnergy.log
+L1_3nm_ReadEnergy,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L1_3nm_ReadEnergy.cfg,NO,NO,NOT_RUN,PASS,
+L2_14nm,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L2_14nm.cfg,NO,NO,NOT_RUN,PASS,
+L2_7nm,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L2_7nm.cfg,NO,NO,NOT_RUN,PASS,
+L2_5nm,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L2_5nm.cfg,NO,NO,NOT_RUN,PASS,
+L2_3nm,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L2_3nm.cfg,NO,NO,NOT_RUN,PASS,
+L2_14nm_ReadEnergy,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L2_14nm_ReadEnergy.cfg,NO,YES,YES,PASS,rerun_logs/L2_14nm_ReadEnergy.log
+L2_7nm_ReadEnergy,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L2_7nm_ReadEnergy.cfg,NO,NO,NOT_RUN,PASS,
+L2_5nm_ReadEnergy,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L2_5nm_ReadEnergy.cfg,NO,NO,NOT_RUN,PASS,
+L2_3nm_ReadEnergy,NO,RECONSTRUCTED_FROM_TEMPLATE_AND_WORKBOOK,nscache_source/config/study_reconstructed/L2_3nm_ReadEnergy.cfg,NO,NO,NOT_RUN,PASS,

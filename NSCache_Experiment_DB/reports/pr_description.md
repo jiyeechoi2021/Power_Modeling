@@ -1,0 +1,9 @@
+The supplied NS-Cache archive had only five rerun logs and claimed a fixed 512bit access width, while all four reconstructed 7nm inputs actually use 256bit. This change organizes the preserved archive into a traceable research DB and records fresh execution of all 16 cases.
+
+All 16 simulations completed. Twelve cases match all six recorded metrics; four 7nm cases differ (74/96 metric matches). Separate one-factor 512bit diagnostics for those four cases exactly match the recorded six metrics, supporting access width as the discrepancy's cause without changing original reproduction inputs or claiming historical originals were recovered.
+
+Includes recovered source/configuration, upstream and inherited license notices, separate bundled/new/diagnostic logs, timestamps and hashes, parsed results, 96-row comparison, read/write scaling matrices, data/tag organizations, optimization trade-offs, provenance, resumable scripts, README and research rules. All 54 recovered source files match upstream 2fdcbf093f806bc9a28964aca8402c42738d58e5; no model source patch was needed. Original ZIP remains unchanged.
+
+Validation: GNU g++ 14.2.0 C++17 optimized build; all 16 fresh runs and four diagnostics finished; resume verified for all 16; archive 108-member byte integrity checked; eight workflow tests passed. Analyzer intentionally exits 1 to preserve the four reproduction discrepancies. Imported source/log whitespace is preserved; newly authored code/docs pass diff whitespace checks.
+
+These are generic SRAM/cache model results, not NVIDIA GPU measurements or validated process-only scaling. Width, voltage/cell parameters and chosen organization confound causal interpretation. No private GPU data, historical correction validation or Rubin prediction is included. See NSCache_Experiment_DB/reports/phase1_summary.md and both detailed reports.

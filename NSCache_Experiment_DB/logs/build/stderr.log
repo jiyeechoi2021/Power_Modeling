@@ -1,0 +1,54 @@
+In file included from BankWithoutHtree.h:23,
+                 from BankWithoutHtree.cpp:20:
+Bank.h:45:24: warning: ‘virtual Bank& Bank::operator=(const Bank&)’ was hidden [-Woverloaded-virtual=]
+   45 |         virtual Bank & operator=(const Bank &);
+      |                        ^~~~~~~~
+BankWithoutHtree.h:44:28: note:   by ‘BankWithoutHtree& BankWithoutHtree::operator=(const BankWithoutHtree&)’
+   44 |         BankWithoutHtree & operator=(const BankWithoutHtree &);
+      |                            ^~~~~~~~
+In file included from BankWithHtree.h:23,
+                 from BankWithHtree.cpp:19:
+Bank.h:45:24: warning: ‘virtual Bank& Bank::operator=(const Bank&)’ was hidden [-Woverloaded-virtual=]
+   45 |         virtual Bank & operator=(const Bank &);
+      |                        ^~~~~~~~
+BankWithHtree.h:39:25: note:   by ‘BankWithHtree& BankWithHtree::operator=(const BankWithHtree&)’
+   39 |         BankWithHtree & operator=(const BankWithHtree &);
+      |                         ^~~~~~~~
+In file included from BankWithHtree.h:23,
+                 from Result.h:23,
+                 from Result.cpp:20:
+Bank.h:45:24: warning: ‘virtual Bank& Bank::operator=(const Bank&)’ was hidden [-Woverloaded-virtual=]
+   45 |         virtual Bank & operator=(const Bank &);
+      |                        ^~~~~~~~
+BankWithHtree.h:39:25: note:   by ‘BankWithHtree& BankWithHtree::operator=(const BankWithHtree&)’
+   39 |         BankWithHtree & operator=(const BankWithHtree &);
+      |                         ^~~~~~~~
+Bank.h:45:24: warning: ‘virtual Bank& Bank::operator=(const Bank&)’ was hidden [-Woverloaded-virtual=]
+   45 |         virtual Bank & operator=(const Bank &);
+      |                        ^~~~~~~~
+In file included from Result.h:24:
+BankWithoutHtree.h:44:28: note:   by ‘BankWithoutHtree& BankWithoutHtree::operator=(const BankWithoutHtree&)’
+   44 |         BankWithoutHtree & operator=(const BankWithoutHtree &);
+      |                            ^~~~~~~~
+formula.cpp: In function ‘void EnlargeSize(double*, double*, double, Technology)’:
+formula.cpp:1599:48: warning: ‘maxNumPFin’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1599 |                 if (temp_ratio == 0 && NumNFin <= maxNumNFin){
+      |                                        ~~~~~~~~^~~~~~~~~~~~~
+formula.cpp:1545:9: note: ‘maxNumPFin’ was declared here
+ 1545 |     int maxNumPFin, maxNumNFin; /* Max number of fins for the specified cell height */
+      |         ^~~~~~~~~~
+In file included from BankWithHtree.h:23,
+                 from main.cpp:36:
+Bank.h:45:24: warning: ‘virtual Bank& Bank::operator=(const Bank&)’ was hidden [-Woverloaded-virtual=]
+   45 |         virtual Bank & operator=(const Bank &);
+      |                        ^~~~~~~~
+BankWithHtree.h:39:25: note:   by ‘BankWithHtree& BankWithHtree::operator=(const BankWithHtree&)’
+   39 |         BankWithHtree & operator=(const BankWithHtree &);
+      |                         ^~~~~~~~
+Bank.h:45:24: warning: ‘virtual Bank& Bank::operator=(const Bank&)’ was hidden [-Woverloaded-virtual=]
+   45 |         virtual Bank & operator=(const Bank &);
+      |                        ^~~~~~~~
+In file included from main.cpp:37:
+BankWithoutHtree.h:44:28: note:   by ‘BankWithoutHtree& BankWithoutHtree::operator=(const BankWithoutHtree&)’
+   44 |         BankWithoutHtree & operator=(const BankWithoutHtree &);
+      |                            ^~~~~~~~

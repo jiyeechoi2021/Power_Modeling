@@ -1,0 +1,20 @@
+{
+  "config_sha256": "9571b1a4eee0712d8d5982c1629be13e36a6340db4d79313b0f1d162627d7021",
+  "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "cell_sha256": "4c8fa9ab6522f5c0dbbee83a0fed50d87bd3b138407ce37bb14f52b4e221e1c0",
+  "run_id": "L1_5nm",
+  "started_utc": "2026-11-11T02:12:59.443060+00:00",
+  "config": "configs/study_reconstructed/L1_5nm.cfg",
+  "command": [
+    "build/nsc",
+    "config/study_reconstructed/L1_5nm.cfg"
+  ],
+  "cwd": "runtime/L1_5nm",
+  "input_origin": "reconstructed; not historical original",
+  "returncode": 0,
+  "status": "FINISHED",
+  "finished_utc": "2026-11-11T02:13:12.261969+00:00",
+  "elapsed_seconds": 12.818312596000396,
+  "stdout_sha256": "b3f48a7baaafd7e6cb894a15f8534586b47705947c59be4a6bdd08bfb4f9c5f2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

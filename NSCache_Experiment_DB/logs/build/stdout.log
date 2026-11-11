@@ -1,0 +1,54 @@
+make: Entering directory '/workspace/Power_Modeling/NSCache_Experiment_DB/source'
+mkdir -p ../build/obj
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/AOSFETCompactModel.d -c AOSFETCompactModel.cpp -o ../build/obj/AOSFETCompactModel.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/Bank.d -c Bank.cpp -o ../build/obj/Bank.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/BankWithHtree.d -c BankWithHtree.cpp -o ../build/obj/BankWithHtree.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/BankWithoutHtree.d -c BankWithoutHtree.cpp -o ../build/obj/BankWithoutHtree.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/BasicDecoder.d -c BasicDecoder.cpp -o ../build/obj/BasicDecoder.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/BinarySenseAmp.d -c BinarySenseAmp.cpp -o ../build/obj/BinarySenseAmp.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/Comparator.d -c Comparator.cpp -o ../build/obj/Comparator.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/FunctionUnit.d -c FunctionUnit.cpp -o ../build/obj/FunctionUnit.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/InputParameter.d -c InputParameter.cpp -o ../build/obj/InputParameter.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/LeveShifter.d -c LeveShifter.cpp -o ../build/obj/LeveShifter.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/Mat.d -c Mat.cpp -o ../build/obj/Mat.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/MemCell.d -c MemCell.cpp -o ../build/obj/MemCell.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/Mux.d -c Mux.cpp -o ../build/obj/Mux.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/OutputDriver.d -c OutputDriver.cpp -o ../build/obj/OutputDriver.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/Precharger.d -c Precharger.cpp -o ../build/obj/Precharger.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/PredecodeBlock.d -c PredecodeBlock.cpp -o ../build/obj/PredecodeBlock.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/Result.d -c Result.cpp -o ../build/obj/Result.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/RowDecoder.d -c RowDecoder.cpp -o ../build/obj/RowDecoder.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/SenseAmp.d -c SenseAmp.cpp -o ../build/obj/SenseAmp.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/SubArray.d -c SubArray.cpp -o ../build/obj/SubArray.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/TSV.d -c TSV.cpp -o ../build/obj/TSV.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/Technology.d -c Technology.cpp -o ../build/obj/Technology.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/Wire.d -c Wire.cpp -o ../build/obj/Wire.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/formula.d -c formula.cpp -o ../build/obj/formula.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF ../build/obj/main.d -c main.cpp -o ../build/obj/main.o
+g++ -O3 -mtune=native  ../build/obj/AOSFETCompactModel.o ../build/obj/Bank.o ../build/obj/BankWithHtree.o ../build/obj/BankWithoutHtree.o ../build/obj/BasicDecoder.o ../build/obj/BinarySenseAmp.o ../build/obj/Comparator.o ../build/obj/FunctionUnit.o ../build/obj/InputParameter.o ../build/obj/LeveShifter.o ../build/obj/Mat.o ../build/obj/MemCell.o ../build/obj/Mux.o ../build/obj/OutputDriver.o ../build/obj/Precharger.o ../build/obj/PredecodeBlock.o ../build/obj/Result.o ../build/obj/RowDecoder.o ../build/obj/SenseAmp.o ../build/obj/SubArray.o ../build/obj/TSV.o ../build/obj/Technology.o ../build/obj/Wire.o ../build/obj/formula.o ../build/obj/main.o  -o ../build/nsc
+make: Leaving directory '/workspace/Power_Modeling/NSCache_Experiment_DB/source'

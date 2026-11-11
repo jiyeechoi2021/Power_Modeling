@@ -1,0 +1,30 @@
+[
+  {
+    "original": "configs/study_reconstructed/L1_7nm.cfg",
+    "diagnostic": "configs/diagnostic_512bit/L1_7nm.cfg",
+    "change": "WordWidth (bit): 256 -> 512; all other bytes unchanged",
+    "original_sha256": "51f374278d5a85d2f4a043430aea4fb789b247e3785c7d58c53818f0a27deea7",
+    "diagnostic_sha256": "e3d3544bd1416c06c6b51581e3489098ff81a78e2e6625d03d56f164ac8f6220"
+  },
+  {
+    "original": "configs/study_reconstructed/L1_7nm_ReadEnergy.cfg",
+    "diagnostic": "configs/diagnostic_512bit/L1_7nm_ReadEnergy.cfg",
+    "change": "WordWidth (bit): 256 -> 512; all other bytes unchanged",
+    "original_sha256": "f5bb1f0ee360feb0bdc347741f47cc604f11152ee71d46b734ff94d4307e7817",
+    "diagnostic_sha256": "406c000dce2ea07d1a9d7579f934d9a8cdf02df3c377938d607048d24aded271"
+  },
+  {
+    "original": "configs/study_reconstructed/L2_7nm.cfg",
+    "diagnostic": "configs/diagnostic_512bit/L2_7nm.cfg",
+    "change": "WordWidth (bit): 256 -> 512; all other bytes unchanged",
+    "original_sha256": "5d61532966faef93d726618be670f823145911bb73bf44049f072d7784cf2c22",
+    "diagnostic_sha256": "ac939d1da926612c2e4ed2ec3f6a47630a3e771d7bf1ddbd5059c7ae84b67e9d"
+  },
+  {
+    "original": "configs/study_reconstructed/L2_7nm_ReadEnergy.cfg",
+    "diagnostic": "configs/diagnostic_512bit/L2_7nm_ReadEnergy.cfg",
+    "change": "WordWidth (bit): 256 -> 512; all other bytes unchanged",
+    "original_sha256": "1193afadc5e54d5b0888490fd593ad7f2fb9b7a49ac566180418e11e2db909d9",
+    "diagnostic_sha256": "4ec74e454f6637f60516f6419ca4d6b351fbe2ce64611b25bb9438e52a31f562"
+  }
+]

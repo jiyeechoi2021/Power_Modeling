@@ -1,0 +1,20 @@
+{
+  "config_sha256": "15155ac521988961d50921f803fe39ae45423921ccbe3d81cca7c7a43a657702",
+  "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "cell_sha256": "7671fcd10b7c2497fe86447e5a29be0df5ef5eb1c7dc3bba479160d93535804a",
+  "run_id": "L2_14nm_ReadEnergy",
+  "started_utc": "2026-11-11T02:13:42.346268+00:00",
+  "config": "configs/study_reconstructed/L2_14nm_ReadEnergy.cfg",
+  "command": [
+    "build/nsc",
+    "config/study_reconstructed/L2_14nm_ReadEnergy.cfg"
+  ],
+  "cwd": "runtime/L2_14nm_ReadEnergy",
+  "input_origin": "reconstructed; not historical original",
+  "returncode": 0,
+  "status": "FINISHED",
+  "finished_utc": "2026-11-11T02:14:12.091567+00:00",
+  "elapsed_seconds": 29.744949872000234,
+  "stdout_sha256": "f4dc673debdb6adbc684a552188fab83b3e3e418cffe257833fb38457221861a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
