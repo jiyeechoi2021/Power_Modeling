@@ -1,3 +1,7 @@
+../.gitignore
+../AGENTS.md
+../NSCache_Experiment_DB_20261110_Reconstructed_PartialRawLogs.zip
+../README.md
 README.md
 configs/New_Configs/AOS_eDRAM_demo.cell
 configs/New_Configs/AOS_eDRAM_demo.cfg
@@ -117,19 +121,23 @@ provenance/README.md
 provenance/archive/README.md
 provenance/archive_manifest.csv
 provenance/archive_sha256.txt
+provenance/artifact_SHA256SUMS.txt
 provenance/bundled/SHA256SUMS.txt
 provenance/bundled/original_vs_reconstructed.md
 provenance/bundled/replay_comparison.csv
 provenance/bundled/run_inventory.csv
+provenance/directory_inventory.txt
 provenance/upstream_README.md
 provenance/upstream_notices.json
 provenance/upstream_source_comparison.json
 provenance/width_diagnostic_changes.json
+reports/analysis_regeneration_validation.md
 reports/changed_files.txt
 reports/phase1_summary.md
 reports/pr_description.md
 reports/process_scaling_analysis.md
 reports/reproducibility_validation.md
+reports/scaling_matrix_traceability.md
 results/comparison.csv
 results/configuration_audit.csv
 results/configuration_audit.json
@@ -140,6 +148,8 @@ results/recorded/nscache_16_runs.csv
 results/recorded/nscache_16_runs.json
 results/run_summary.csv
 results/scaling.csv
+results/scaling_matrix_comparison.csv
+results/scaling_width_aligned.csv
 results/width_diagnostic.csv
 results/width_diagnostic.json
 scripts/analyze.py
@@ -152,6 +162,7 @@ scripts/bundled/run_all.sh
 scripts/diagnose_width.py
 scripts/environment.py
 scripts/run_experiments.py
+scripts/scaling.py
 scripts/snapshot_manifest.py
 source/AOSFETCompactModel.cpp
 source/AOSFETCompactModel.h
@@ -211,4 +222,5 @@ source/global.h
 source/macros.h
 source/main.cpp
 source/typedef.h
+tests/test_analysis.py
 tests/test_workflow.py

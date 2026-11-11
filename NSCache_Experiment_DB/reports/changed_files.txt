@@ -129,11 +129,13 @@ NSCache_Experiment_DB/provenance/upstream_README.md
 NSCache_Experiment_DB/provenance/upstream_notices.json
 NSCache_Experiment_DB/provenance/upstream_source_comparison.json
 NSCache_Experiment_DB/provenance/width_diagnostic_changes.json
+NSCache_Experiment_DB/reports/analysis_regeneration_validation.md
 NSCache_Experiment_DB/reports/changed_files.txt
 NSCache_Experiment_DB/reports/phase1_summary.md
 NSCache_Experiment_DB/reports/pr_description.md
 NSCache_Experiment_DB/reports/process_scaling_analysis.md
 NSCache_Experiment_DB/reports/reproducibility_validation.md
+NSCache_Experiment_DB/reports/scaling_matrix_traceability.md
 NSCache_Experiment_DB/results/comparison.csv
 NSCache_Experiment_DB/results/configuration_audit.csv
 NSCache_Experiment_DB/results/configuration_audit.json
@@ -144,6 +146,8 @@ NSCache_Experiment_DB/results/recorded/nscache_16_runs.csv
 NSCache_Experiment_DB/results/recorded/nscache_16_runs.json
 NSCache_Experiment_DB/results/run_summary.csv
 NSCache_Experiment_DB/results/scaling.csv
+NSCache_Experiment_DB/results/scaling_matrix_comparison.csv
+NSCache_Experiment_DB/results/scaling_width_aligned.csv
 NSCache_Experiment_DB/results/width_diagnostic.csv
 NSCache_Experiment_DB/results/width_diagnostic.json
 NSCache_Experiment_DB/scripts/analyze.py
@@ -156,6 +160,7 @@ NSCache_Experiment_DB/scripts/bundled/run_all.sh
 NSCache_Experiment_DB/scripts/diagnose_width.py
 NSCache_Experiment_DB/scripts/environment.py
 NSCache_Experiment_DB/scripts/run_experiments.py
+NSCache_Experiment_DB/scripts/scaling.py
 NSCache_Experiment_DB/scripts/snapshot_manifest.py
 NSCache_Experiment_DB/source/AOSFETCompactModel.cpp
 NSCache_Experiment_DB/source/AOSFETCompactModel.h
@@ -215,5 +220,6 @@ NSCache_Experiment_DB/source/global.h
 NSCache_Experiment_DB/source/macros.h
 NSCache_Experiment_DB/source/main.cpp
 NSCache_Experiment_DB/source/typedef.h
+NSCache_Experiment_DB/tests/test_analysis.py
 NSCache_Experiment_DB/tests/test_workflow.py
 README.md

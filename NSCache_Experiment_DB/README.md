@@ -12,7 +12,11 @@ NVIDIA GPU 세대 간 에너지 연구를 위한 후보 모델 검토 단계다.
 
 혼합 폭에서는 7→5 SF가 모두 1보다 크지만, 512bit 정렬 후에는 모두 1보다 작다. 5→3은 두 Matrix에서 동일하다. 정렬하더라도 **Voltage, Cell Parameters, Internal Cache Organization이 달라 Pure Process Scaling이 아니다.** 새로운 재현성 성공 판정, historical 원본 복구 또는 GPU 실측 검증으로 간주하지 않는다.
 
-이번 보완은 기존 로그를 재분석한 문서/분석 CSV 변경뿐이다. 기존 입력·로그·실행/분석 스크립트는 변경하지 않았다. `scripts/analyze.py`는 원래 16개 재현군용이며 재실행하면 `scaling.csv`와 공정 보고서를 원래 형식으로 덮어쓴다. 보완 Matrix의 계산 근거는 traceability 보고서와 CSV에 별도 보존했으므로, 이 보완본을 원래 analyzer의 생성 결과와 혼동하지 않는다. `provenance/artifact_SHA256SUMS.txt`, `directory_inventory.txt`, `reports/changed_files.txt`는 초기 Phase 1 제출 시점의 목록/해시이며 이번 문서·CSV 보완본의 전체 manifest가 아니다. 현재 변경 이력은 Git에서 확인한다.
+`scripts/analyze.py`는 두 Matrix, 차이 CSV, Traceability, 진단 summary를 모두 **20개 raw log에서 자동 재생성**한다. 기존 분석 CSV/JSON을 입력값으로 읽지 않는다. 설정·cell·stdout/stderr 해시, 종료 상태, width/node/objective, 실행 metadata의 공통 binary identity를 검증한 후 결과를 쓴다. 로컬 binary나 새 빌드는 재분석에 필요 없다. 두 번 연속 실행한 12개 생성 파일이 byte 단위로 같음을 검증했다.
+
+Exit code: `0`은 모든 재현 비교 일치, `1`은 현재 데이터의 7nm 4개 기록 불일치, `2`는 누락·손상·미완료 raw 입력이다. Exit 2에서는 기존 생성 결과를 덮어쓰지 않는다. 새 Matrix가 추가돼도 원래 12/16 재현성 판정은 유지된다.
+
+파일을 변경한 뒤 `python3 scripts/snapshot_manifest.py`로 manifest·전체 inventory·변경 파일 목록을 갱신하고 `python3 scripts/snapshot_manifest.py --check`로 검증한다(DB 디렉터리 기준). 경로는 DB 기준이며 저장소 루트 README·AGENTS·.gitignore·원본 ZIP은 `../` 경로로 포함한다. SHA manifest 자신은 해시 대상에서 제외하고, inventory에는 manifest와 inventory 자신을 포함한다. 무시된 build/runtime/cache는 제외한다. `--base origin/main`은 변경 파일 목록의 기준이다. 해당 remote ref가 없는 checkout에서는 먼저 `git fetch origin main:refs/remotes/origin/main`을 실행하거나 `--base <검증한 base SHA>`를 지정한다.
 
 ## 구조 및 출처
 
@@ -67,6 +71,7 @@ python3 -m unittest discover -s NSCache_Experiment_DB/tests -v
 - [재현성 검증 및 96개 지표 비교](reports/reproducibility_validation.md)
 - [두 Read/Write Scaling Matrix, 조직 및 trade-off](reports/process_scaling_analysis.md)
 - [SF별 raw log·configuration·수식 추적](reports/scaling_matrix_traceability.md)
+- [최종 자동 재생성 검증](reports/analysis_regeneration_validation.md)
 - [출처, 라이선스 및 누락 자료](provenance/README.md)
 - [후속 연구 원칙](../AGENTS.md)
 

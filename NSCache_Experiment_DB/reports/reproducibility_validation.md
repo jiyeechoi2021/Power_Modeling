@@ -6,7 +6,7 @@
 ## 비교 방법
 
 stdout의 cache summary에서 read/write nJ를 ×1000 하여 pJ/access로 변환한다. leakage=mW, latency=ns, area=mm². 0.001 nJ 출력 간격에 대해 에너지는 ±0.5 pJ, 나머지 세 연속 지표는 ±0.0005, solution count는 정확히 비교한다. 이는 출력 해상도 기준이며 내부 계산 정밀도의 동등성을 증명하지 않는다. 부호 있는 차이는 새 값−기록값이다.
-종료 코드 0, Finished!, 모든 summary 항목과 data/tag 조직 파싱, 입력·cell·binary·로그 SHA-256 일치를 요구한다. 비교 스크립트는 미실행/실패/불일치가 있으면 비영 종료한다.
+종료 코드 0, Finished!, 모든 summary 항목과 data/tag 조직 파싱, 입력·cell·로그 SHA-256 및 20개 실행 metadata의 binary identity 일치를 요구한다. 로컬 binary 재빌드는 필요 없다. 비교 스크립트는 미실행/실패/불일치가 있으면 비영 종료한다.
 
 ## 실행별 결과
 
@@ -151,4 +151,4 @@ stdout의 cache summary에서 read/write nJ를 ×1000 하여 pJ/access로 변환
 | L2_7nm | 87.0 | 63.0 | True | [log](../logs/diagnostic_512bit/L2_7nm/20261111T021559.405221Z/stdout.log) |
 | L2_7nm_ReadEnergy | 83.0 | 59.0 | True | [log](../logs/diagnostic_512bit/L2_7nm_ReadEnergy/20261111T021559.763894Z/stdout.log) |
 
-4개 모두 6개 지표가 기록값과 정확히 일치했다. 따라서 제공된 7nm 재구성 설정의 폭 차이가 현재 불일치를 설명한다는 강한 실험적 근거를 확보했다. 원래 설정이 512bit였다는 historical 증명이나 원본 자료 회수로 간주하지 않는다. 소스 버전은 54개 파일의 byte 일치로, 단위 변환은 Decimal 기반 파싱으로 확인했다. 데이터/태그 조직 비교도 각각의 JSON과 로그에서 가능하다.
+4/4개가 6개 지표에서 기록값과 정확히 일치했다. 따라서 제공된 7nm 재구성 설정의 폭 차이가 현재 불일치를 설명한다는 강한 실험적 근거를 확보했다. 원래 설정이 512bit였다는 historical 증명이나 원본 자료 회수로 간주하지 않는다. 소스 버전은 54개 파일의 byte 일치로, 단위 변환은 Decimal 기반 파싱으로 확인했다. 데이터/태그 조직 비교도 각각의 JSON과 로그에서 가능하다.

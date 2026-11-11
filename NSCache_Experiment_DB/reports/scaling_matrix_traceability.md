@@ -1,10 +1,10 @@
 # Scaling Matrix 계산 근거
 
-두 Matrix의 각 24개 SF를 raw stdout과 configuration에 연결한다. 새로운 실험이나 추정값을 생성하지 않았다. As-Reconstructed Input은 기존 16개 재현 실행만 사용한다. Width-Aligned는 7nm만 별도 512bit 진단으로 선택하며 나머지는 같은 재현 실행을 재사용한다. 원래의 16개 실행 및 12/16 일치 판정은 바뀌지 않는다.
+두 Matrix의 각 24개 SF를 raw stdout과 configuration에 연결한다. 새로운 실험이나 추정값을 생성하지 않았다. As-Reconstructed Input은 기존 16개 재현 실행만 사용한다. Width-Aligned는 7nm만 별도 512bit 진단으로 선택하며 나머지는 같은 재현 실행을 재사용한다. 원래의 16개 실행을 별도 진단으로 대체하지 않는다.
 
 ## 수식과 정밀도
 
-`E_pJ/access = stdout의 nJ/access × 1000`; `SF(a→b)=E_b/E_a`; `감소율(%)=100×(1−SF)`. Read/Write, L1/L2, 두 optimization을 각각 독립 계산했다. SF는 무차원이다. CSV는 반올림된 출력의 Decimal 비율을 보관하고 본문 Matrix는 소수점 넷째 자리로 표시한다. 원래 scaling.csv의 기존 수치/컬럼은 그대로 보존했다. 출력 간격 0.001nJ=1pJ에 따른 정밀도 한계가 있으며 SF의 유효 정확도가 소수점 넷째 자리라는 뜻은 아니다.
+`E_pJ/access = stdout의 nJ/access × 1000`; `SF(a→b)=E_b/E_a`; `감소율(%)=100×(1−SF)`. Read/Write, L1/L2, 두 optimization을 각각 독립 계산했다. SF는 무차원이다. CSV는 반올림된 출력의 Decimal 비율을 보관하고 본문 Matrix는 소수점 넷째 자리로 표시한다. 두 CSV 모두 raw log의 Decimal 값에서 자동 재계산한다. 이전 float 표현과 끝자리 표현 차이가 있을 수 있지만 기초 energy와 SF의 의미는 같다. 출력 간격 0.001nJ=1pJ에 따른 정밀도 한계가 있으며 SF의 유효 정확도가 소수점 넷째 자리라는 뜻은 아니다.
 `ΔSF = Width-Aligned − As-Reconstructed`; `상대변화(%)=100×(Width-Aligned/As-Reconstructed−1)`.
 
 ## 선택한 실행과 Configuration
