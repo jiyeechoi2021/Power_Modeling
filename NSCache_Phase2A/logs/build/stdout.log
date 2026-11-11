@@ -1,0 +1,54 @@
+make: Entering directory '/workspace/Power_Modeling/NSCache_Experiment_DB/source'
+mkdir -p /workspace/Power_Modeling/NSCache_Phase2A/build/obj
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/AOSFETCompactModel.d -c AOSFETCompactModel.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/AOSFETCompactModel.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Bank.d -c Bank.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Bank.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BankWithHtree.d -c BankWithHtree.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BankWithHtree.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BankWithoutHtree.d -c BankWithoutHtree.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BankWithoutHtree.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BasicDecoder.d -c BasicDecoder.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BasicDecoder.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BinarySenseAmp.d -c BinarySenseAmp.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BinarySenseAmp.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Comparator.d -c Comparator.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Comparator.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/FunctionUnit.d -c FunctionUnit.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/FunctionUnit.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/InputParameter.d -c InputParameter.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/InputParameter.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/LeveShifter.d -c LeveShifter.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/LeveShifter.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Mat.d -c Mat.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Mat.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/MemCell.d -c MemCell.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/MemCell.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Mux.d -c Mux.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Mux.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/OutputDriver.d -c OutputDriver.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/OutputDriver.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Precharger.d -c Precharger.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Precharger.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/PredecodeBlock.d -c PredecodeBlock.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/PredecodeBlock.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Result.d -c Result.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Result.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/RowDecoder.d -c RowDecoder.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/RowDecoder.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/SenseAmp.d -c SenseAmp.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/SenseAmp.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/SubArray.d -c SubArray.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/SubArray.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/TSV.d -c TSV.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/TSV.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Technology.d -c Technology.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Technology.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Wire.d -c Wire.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Wire.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/formula.d -c formula.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/formula.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_Phase2A/build/obj/main.d -c main.cpp -o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/main.o
+g++ -O3 -mtune=native  /workspace/Power_Modeling/NSCache_Phase2A/build/obj/AOSFETCompactModel.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Bank.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BankWithHtree.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BankWithoutHtree.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BasicDecoder.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/BinarySenseAmp.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Comparator.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/FunctionUnit.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/InputParameter.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/LeveShifter.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Mat.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/MemCell.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Mux.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/OutputDriver.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Precharger.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/PredecodeBlock.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Result.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/RowDecoder.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/SenseAmp.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/SubArray.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/TSV.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Technology.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/Wire.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/formula.o /workspace/Power_Modeling/NSCache_Phase2A/build/obj/main.o  -o /workspace/Power_Modeling/NSCache_Phase2A/build/nsc
+make: Leaving directory '/workspace/Power_Modeling/NSCache_Experiment_DB/source'

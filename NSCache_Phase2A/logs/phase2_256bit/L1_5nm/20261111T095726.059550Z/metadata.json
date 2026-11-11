@@ -1,0 +1,24 @@
+{
+  "config_sha256": "ce387129e29a2e18139b13e2252771899b1617f75af8d8957bb99e7e86555054",
+  "cell_sha256": "4c8fa9ab6522f5c0dbbee83a0fed50d87bd3b138407ce37bb14f52b4e221e1c0",
+  "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "run_id": "L1_5nm",
+  "phase": "2-A",
+  "input_origin": "new 256bit derivative; not historical original",
+  "config": "configs/phase2_256bit/L1_5nm.cfg",
+  "cell": "NSCache_Experiment_DB/configs/New_Configs/SRAM_cell_5nm.cell",
+  "started_utc": "2026-11-11T09:57:26.060674+00:00",
+  "command": [
+    "build/nsc",
+    "config/phase2_256bit/L1_5nm.cfg"
+  ],
+  "cwd": "runtime/L1_5nm",
+  "environment_sha256": "d50be11d8be4e12a7d43f4247f19a06733885e85fb5af8cc248f1f9915453058",
+  "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "returncode": 0,
+  "status": "FINISHED",
+  "finished_utc": "2026-11-11T09:57:41.464963+00:00",
+  "elapsed_seconds": 15.403913576999912,
+  "stdout_sha256": "09c92e7d44131cedcb6d7d9f79f9c214543982085ea61e97702028478dbd7901",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
