@@ -1,0 +1,146 @@
+[
+  {
+    "run_id": "L1_14nm",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L1_14nm.cfg",
+    "source_sha256": "8959b8b3f74b195ac38ff52bb689325fc9337c13eaa427dc328540873bb11d16",
+    "config": "configs/phase2_256bit/L1_14nm.cfg",
+    "config_sha256": "0816eb5fc120f62105ca52d46e261a398dd02b117615602d97715e0f7a3faace",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L1_14nm.cfg\n+++ configs/phase2_256bit/L1_14nm.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 14\n \n -Capacity (KB): 128\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L1_7nm",
+    "source": "NSCache_Experiment_DB/configs/diagnostic_512bit/L1_7nm.cfg",
+    "source_sha256": "e3d3544bd1416c06c6b51581e3489098ff81a78e2e6625d03d56f164ac8f6220",
+    "config": "configs/phase2_256bit/L1_7nm.cfg",
+    "config_sha256": "51f374278d5a85d2f4a043430aea4fb789b247e3785c7d58c53818f0a27deea7",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/diagnostic_512bit/L1_7nm.cfg\n+++ configs/phase2_256bit/L1_7nm.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 7\n \n -Capacity (KB): 128\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L1_5nm",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L1_5nm.cfg",
+    "source_sha256": "9571b1a4eee0712d8d5982c1629be13e36a6340db4d79313b0f1d162627d7021",
+    "config": "configs/phase2_256bit/L1_5nm.cfg",
+    "config_sha256": "ce387129e29a2e18139b13e2252771899b1617f75af8d8957bb99e7e86555054",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L1_5nm.cfg\n+++ configs/phase2_256bit/L1_5nm.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 5\n \n -Capacity (KB): 128\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L1_3nm",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L1_3nm.cfg",
+    "source_sha256": "cf1855e101096b570d02b3113c7dacdf6429a6c64a64ed5ade87cd3a116a8176",
+    "config": "configs/phase2_256bit/L1_3nm.cfg",
+    "config_sha256": "0cb23218f27f4bae4427a15fc088fba1670d823d554f39efe92325bdd0d2de3e",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L1_3nm.cfg\n+++ configs/phase2_256bit/L1_3nm.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 3\n \n -Capacity (KB): 128\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L1_14nm_ReadEnergy",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L1_14nm_ReadEnergy.cfg",
+    "source_sha256": "f1ee88e58bcf803f45ff25b3379b65436e7bf6c3176db3ac6b05c0ec223bd728",
+    "config": "configs/phase2_256bit/L1_14nm_ReadEnergy.cfg",
+    "config_sha256": "a7c0797a2c296f0a0b7b0925ff24f488d9855c845538d17dc58ab0b069abc8b8",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L1_14nm_ReadEnergy.cfg\n+++ configs/phase2_256bit/L1_14nm_ReadEnergy.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 14\n \n -Capacity (KB): 128\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L1_7nm_ReadEnergy",
+    "source": "NSCache_Experiment_DB/configs/diagnostic_512bit/L1_7nm_ReadEnergy.cfg",
+    "source_sha256": "406c000dce2ea07d1a9d7579f934d9a8cdf02df3c377938d607048d24aded271",
+    "config": "configs/phase2_256bit/L1_7nm_ReadEnergy.cfg",
+    "config_sha256": "f5bb1f0ee360feb0bdc347741f47cc604f11152ee71d46b734ff94d4307e7817",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/diagnostic_512bit/L1_7nm_ReadEnergy.cfg\n+++ configs/phase2_256bit/L1_7nm_ReadEnergy.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 7\n \n -Capacity (KB): 128\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L1_5nm_ReadEnergy",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L1_5nm_ReadEnergy.cfg",
+    "source_sha256": "7ea6cb336c5000f3545831aa37767b6f5f8ffdddf8134da6293411fff9323c60",
+    "config": "configs/phase2_256bit/L1_5nm_ReadEnergy.cfg",
+    "config_sha256": "1ce9ead56ea25dce05d47bb6c11e1984d4c974b30273103dcd58e68a59fbdd88",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L1_5nm_ReadEnergy.cfg\n+++ configs/phase2_256bit/L1_5nm_ReadEnergy.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 5\n \n -Capacity (KB): 128\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L1_3nm_ReadEnergy",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L1_3nm_ReadEnergy.cfg",
+    "source_sha256": "0ec22917454d3424a5a4a88ecb2c71a3c7912a7faac42ae70c09b617c30cd4c1",
+    "config": "configs/phase2_256bit/L1_3nm_ReadEnergy.cfg",
+    "config_sha256": "92d2a47c4fad5d2d5734196bd8872e375232317588782c9e079cc51585200776",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L1_3nm_ReadEnergy.cfg\n+++ configs/phase2_256bit/L1_3nm_ReadEnergy.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 3\n \n -Capacity (KB): 128\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L2_14nm",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L2_14nm.cfg",
+    "source_sha256": "34b8f1f600e3336866fc336da0918d43a45cc3e5784518f19e22d3425d917cc1",
+    "config": "configs/phase2_256bit/L2_14nm.cfg",
+    "config_sha256": "42c868ffdf27f19a9dd02e7c96eabb47f4ef1790566fe9dd90cb7b40e0f2b885",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L2_14nm.cfg\n+++ configs/phase2_256bit/L2_14nm.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 14\n \n -Capacity (MB): 1\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L2_7nm",
+    "source": "NSCache_Experiment_DB/configs/diagnostic_512bit/L2_7nm.cfg",
+    "source_sha256": "ac939d1da926612c2e4ed2ec3f6a47630a3e771d7bf1ddbd5059c7ae84b67e9d",
+    "config": "configs/phase2_256bit/L2_7nm.cfg",
+    "config_sha256": "5d61532966faef93d726618be670f823145911bb73bf44049f072d7784cf2c22",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/diagnostic_512bit/L2_7nm.cfg\n+++ configs/phase2_256bit/L2_7nm.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 7\n \n -Capacity (MB): 1\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L2_5nm",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L2_5nm.cfg",
+    "source_sha256": "23cd1c71437e8b42ab6bacb007d71817e4cc041ae9f27586d128b15458254752",
+    "config": "configs/phase2_256bit/L2_5nm.cfg",
+    "config_sha256": "65241ca40ad94c7e33c3771b4fd7cc9643af2acf857680297f45fe74ddb990b2",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L2_5nm.cfg\n+++ configs/phase2_256bit/L2_5nm.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 5\n \n -Capacity (MB): 1\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L2_3nm",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L2_3nm.cfg",
+    "source_sha256": "cd3fba7b5bc6b1879b53f6b34ff7d5e52f415a309e16f3b039b3bc5271855982",
+    "config": "configs/phase2_256bit/L2_3nm.cfg",
+    "config_sha256": "69510c3c608dee668abe6350b52b745a3d2937f47bc627abbcd9d95309e58e5f",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L2_3nm.cfg\n+++ configs/phase2_256bit/L2_3nm.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 3\n \n -Capacity (MB): 1\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L2_14nm_ReadEnergy",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L2_14nm_ReadEnergy.cfg",
+    "source_sha256": "15155ac521988961d50921f803fe39ae45423921ccbe3d81cca7c7a43a657702",
+    "config": "configs/phase2_256bit/L2_14nm_ReadEnergy.cfg",
+    "config_sha256": "4ac3672acc8adba61d7dead9fe6f2fea4bc2d2e1e64279036bdd2f48e90d4188",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L2_14nm_ReadEnergy.cfg\n+++ configs/phase2_256bit/L2_14nm_ReadEnergy.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 14\n \n -Capacity (MB): 1\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L2_7nm_ReadEnergy",
+    "source": "NSCache_Experiment_DB/configs/diagnostic_512bit/L2_7nm_ReadEnergy.cfg",
+    "source_sha256": "4ec74e454f6637f60516f6419ca4d6b351fbe2ce64611b25bb9438e52a31f562",
+    "config": "configs/phase2_256bit/L2_7nm_ReadEnergy.cfg",
+    "config_sha256": "1193afadc5e54d5b0888490fd593ad7f2fb9b7a49ac566180418e11e2db909d9",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/diagnostic_512bit/L2_7nm_ReadEnergy.cfg\n+++ configs/phase2_256bit/L2_7nm_ReadEnergy.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 7\n \n -Capacity (MB): 1\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L2_5nm_ReadEnergy",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L2_5nm_ReadEnergy.cfg",
+    "source_sha256": "20e58e45499a9d9d1206025eb0916c42a1129a0ec7b91022d32d7d1472f40946",
+    "config": "configs/phase2_256bit/L2_5nm_ReadEnergy.cfg",
+    "config_sha256": "c128d51e0656c827e01752a17919f9fb344de1bd5c3537504c2f63515539c2f3",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L2_5nm_ReadEnergy.cfg\n+++ configs/phase2_256bit/L2_5nm_ReadEnergy.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 5\n \n -Capacity (MB): 1\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  },
+  {
+    "run_id": "L2_3nm_ReadEnergy",
+    "source": "NSCache_Experiment_DB/configs/study_reconstructed/L2_3nm_ReadEnergy.cfg",
+    "source_sha256": "0f3dcb3d07a743fc441b63e08cc0810d979d522332ea32f2f01f76c080942d01",
+    "config": "configs/phase2_256bit/L2_3nm_ReadEnergy.cfg",
+    "config_sha256": "78752d0578a4a48dfdd3df20fb84be02891459420fa9d6c85ece4293a1c83fc5",
+    "change": "WordWidth (bit): 512 -> 256 only",
+    "diff": "--- NSCache_Experiment_DB/configs/study_reconstructed/L2_3nm_ReadEnergy.cfg\n+++ configs/phase2_256bit/L2_3nm_ReadEnergy.cfg\n@@ -7,7 +7,7 @@\n -ProcessNode: 3\n \n -Capacity (MB): 1\n--WordWidth (bit): 512\n+-WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n \n"
+  }
+]

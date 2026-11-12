@@ -1,0 +1,5 @@
+run_id,phase2_log,phase1_log,all_six_exact,organization_exact
+L1_7nm,logs/phase2_256bit/L1_7nm/20261111T095741.466300Z/stdout.log,../NSCache_Experiment_DB/logs/new/L1_7nm/20261111T021312.264165Z/stdout.log,True,True
+L1_7nm_ReadEnergy,logs/phase2_256bit/L1_7nm_ReadEnergy/20261111T095743.422810Z/stdout.log,../NSCache_Experiment_DB/logs/new/L1_7nm_ReadEnergy/20261111T021324.523014Z/stdout.log,True,True
+L2_7nm,logs/phase2_256bit/L2_7nm/20261111T095955.392894Z/stdout.log,../NSCache_Experiment_DB/logs/new/L2_7nm/20261111T021505.430977Z/stdout.log,True,True
+L2_7nm_ReadEnergy,logs/phase2_256bit/L2_7nm_ReadEnergy/20261111T095958.504262Z/stdout.log,../NSCache_Experiment_DB/logs/new/L2_7nm_ReadEnergy/20261111T021517.121198Z/stdout.log,True,True
