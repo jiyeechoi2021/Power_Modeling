@@ -1,0 +1,31 @@
+{
+  "run_id": "L2_5nm_50MiB_ReadLatency",
+  "node_nm": 5,
+  "capacity_mib": 50,
+  "objective": "ReadLatency",
+  "group": "bridge",
+  "config": "configs/L2_5nm_50MiB_ReadLatency.cfg",
+  "config_sha256": "7e9b55afef3eff617dd052d6c0e55f5ebcdc69157b30212b1e53a9c49a7200e3",
+  "source": "NSCache_Phase2A/configs/phase2_256bit/L2_5nm.cfg",
+  "source_sha256": "65241ca40ad94c7e33c3771b4fd7cc9643af2acf857680297f45fe74ddb990b2",
+  "change": "Capacity (MB): 1 -> 50; binary MiB; all other settings unchanged",
+  "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "cell_sha256": "4c8fa9ab6522f5c0dbbee83a0fed50d87bd3b138407ce37bb14f52b4e221e1c0",
+  "environment_sha256": "e9729b7c78b0610a2f1aea95fd7e55556618ebe3ff8461e76205b47a1c28b56e",
+  "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "started_utc": "2026-11-12T04:41:13.614428+00:00",
+  "command": [
+    "build/nsc",
+    "config/cases/L2_5nm_50MiB_ReadLatency.cfg"
+  ],
+  "cwd": "runtime/L2_5nm_50MiB_ReadLatency",
+  "status": "FAILED",
+  "returncode": 255,
+  "elapsed_seconds": 0.201383772999975,
+  "max_rss_kib": 14336,
+  "user_cpu_seconds": 0.0,
+  "system_cpu_seconds": 0.0025499999999999997,
+  "finished_utc": "2026-11-12T04:41:13.816103+00:00",
+  "stdout_sha256": "703387922b51d1b94175c586be6f5c3890aa4594ee5489dfc29bc306f56854a1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

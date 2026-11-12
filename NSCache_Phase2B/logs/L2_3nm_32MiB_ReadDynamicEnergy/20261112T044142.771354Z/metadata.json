@@ -1,0 +1,31 @@
+{
+  "run_id": "L2_3nm_32MiB_ReadDynamicEnergy",
+  "node_nm": 3,
+  "capacity_mib": 32,
+  "objective": "ReadDynamicEnergy",
+  "group": "fixed32",
+  "config": "configs/L2_3nm_32MiB_ReadDynamicEnergy.cfg",
+  "config_sha256": "bd8ef14285d2ac4478c97e7a2b10896203fc7cb6f1f01f98a1d0a57ba5b4cb60",
+  "source": "NSCache_Phase2A/configs/phase2_256bit/L2_3nm_ReadEnergy.cfg",
+  "source_sha256": "78752d0578a4a48dfdd3df20fb84be02891459420fa9d6c85ece4293a1c83fc5",
+  "change": "Capacity (MB): 1 -> 32; binary MiB; all other settings unchanged",
+  "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "cell_sha256": "de745c1e1c9b40d2162a4fe6fdeb45f5423ce4bfd9b7034efe8a7aca90a494c3",
+  "environment_sha256": "e9729b7c78b0610a2f1aea95fd7e55556618ebe3ff8461e76205b47a1c28b56e",
+  "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "started_utc": "2026-11-12T04:41:42.773080+00:00",
+  "command": [
+    "build/nsc",
+    "config/cases/L2_3nm_32MiB_ReadDynamicEnergy.cfg"
+  ],
+  "cwd": "runtime/L2_3nm_32MiB_ReadDynamicEnergy",
+  "status": "FINISHED",
+  "returncode": 0,
+  "elapsed_seconds": 115.10950241699993,
+  "max_rss_kib": 14336,
+  "user_cpu_seconds": 114.737171,
+  "system_cpu_seconds": 0.01283,
+  "finished_utc": "2026-11-12T04:43:37.883064+00:00",
+  "stdout_sha256": "c198beecc8e663b0ca4f35d7dd3ecef207ba9583df11140b87480f40c41ac2cb",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

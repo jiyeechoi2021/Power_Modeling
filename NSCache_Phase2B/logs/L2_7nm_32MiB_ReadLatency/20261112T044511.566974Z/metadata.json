@@ -1,0 +1,31 @@
+{
+  "run_id": "L2_7nm_32MiB_ReadLatency",
+  "node_nm": 7,
+  "capacity_mib": 32,
+  "objective": "ReadLatency",
+  "group": "fixed32",
+  "config": "configs/L2_7nm_32MiB_ReadLatency.cfg",
+  "config_sha256": "d2e7834e4709c8f02bf60a123a87a020afd6156bc2de2527e614c6a336483bc7",
+  "source": "NSCache_Phase2A/configs/phase2_256bit/L2_7nm.cfg",
+  "source_sha256": "5d61532966faef93d726618be670f823145911bb73bf44049f072d7784cf2c22",
+  "change": "Capacity (MB): 1 -> 32; binary MiB; all other settings unchanged",
+  "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "cell_sha256": "9b8dddb3472a310d162587a327ed9d930862974bb9ef4c6a398552e55f5eafff",
+  "environment_sha256": "e9729b7c78b0610a2f1aea95fd7e55556618ebe3ff8461e76205b47a1c28b56e",
+  "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "started_utc": "2026-11-12T04:45:11.569201+00:00",
+  "command": [
+    "build/nsc",
+    "config/cases/L2_7nm_32MiB_ReadLatency.cfg"
+  ],
+  "cwd": "runtime/L2_7nm_32MiB_ReadLatency",
+  "status": "FINISHED",
+  "returncode": 0,
+  "elapsed_seconds": 101.4926809640001,
+  "max_rss_kib": 14504,
+  "user_cpu_seconds": 101.394448,
+  "system_cpu_seconds": 0.008302,
+  "finished_utc": "2026-11-12T04:46:53.062154+00:00",
+  "stdout_sha256": "9070d76385c7156befd30dd5602cb73cf85c3ddfbaecc278bcb64d38d717272e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

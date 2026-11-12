@@ -1,0 +1,17 @@
+{
+  "node": 5,
+  "capacity_MB": 32,
+  "width_bits": 256,
+  "objective": "ReadEnergy",
+  "command": [
+    "./nsc",
+    "config/l2_capacity_sweep/L2_5nm_32MB_ReadEnergy.cfg"
+  ],
+  "started_utc": "2026-11-12T02:25:53.390241+00:00",
+  "elapsed_seconds": 122.421,
+  "state": "FINISHED",
+  "returncode": 0,
+  "stdout_sha256": "2267bac0279c6127ca309148b4beacb4b7700ccee3d3a73d7ef8e5fed0fec162",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cfg_sha256": "84cdca6d69b69df145ed44358a530712814f7379b767c261df73634fd1a06e4b"
+}
