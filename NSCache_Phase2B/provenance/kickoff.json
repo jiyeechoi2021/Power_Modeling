@@ -1,0 +1,18 @@
+{
+  "queried_remote_refs": {
+    "main": "51208723a98c9df7a267126b3477a59837b14812",
+    "research/nscache-phase1-reproduction": "26ba7529fcb356c82b1813b6030f54746ccb3cc3",
+    "research/nscache-phase2a-256bit": "820fe02a95009985510c4810c2044aaa8c7e610e"
+  },
+  "work_branch_preserved": "51208723a98c9df7a267126b3477a59837b14812",
+  "new_branch": "research/nscache-phase2b-l2-capacity-organization",
+  "base": "research/nscache-phase2a-256bit",
+  "reason": "Actual main remains ZIP-only and lacks Phase 2-A; base selected from verified refs. Direct PR #1/#2 GraphQL queries both returned Forbidden; merge/closed UI state is not independently verified.",
+  "actual_build_command": "make -C ../NSCache_Experiment_DB/source -j 2 target=$PWD/build/nsc OUTDIR=$PWD/build/obj",
+  "initial_environment_capture_note": "The initial build used Phase 2-A's metadata helper, whose build_command field is a template pointing to Phase 2-A. Preserve that original environment snapshot; actual Phase 2-B compile/link commands are in logs/build/stdout.log. This record corrects the recipe; future builds use scripts/environment.py.",
+  "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "verified_source_files": 54,
+  "local_binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "uploaded_binary_sha256": "b9499f1ed2c46fdbf9cb14ab063c148f63e42cdddf53101bd3a0801c3e3e6efb",
+  "no_source_patch": true
+}

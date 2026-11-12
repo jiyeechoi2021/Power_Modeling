@@ -1,0 +1,28 @@
+{
+  "archive_sha256": "15742a30764d19e76ce48102910cd66a404b75f3ea248640e16ca576d95c659c",
+  "members": 35,
+  "listed_hashes_verified": 33,
+  "unlisted_members": [
+    "README.md",
+    "SHA256SUMS.txt"
+  ],
+  "missing_metadata": [
+    "L2_14nm_32MB_ReadLatency.json"
+  ],
+  "source_tree_included": false,
+  "cell_files_included": false,
+  "source_provenance": "self-reported recovered source; no exact tree/cell digests supplied",
+  "adoption": "not independently complete; rerun all eight under current verified source",
+  "binary_sha256_record": "b9499f1ed2c46fdbf9cb14ab063c148f63e42cdddf53101bd3a0801c3e3e6efb  nsc",
+  "config_options_compatible_with_current_source_inputs": [
+    "L2_3nm_32MiB_ReadLatency",
+    "L2_3nm_32MiB_ReadDynamicEnergy",
+    "L2_5nm_32MiB_ReadLatency",
+    "L2_5nm_32MiB_ReadDynamicEnergy",
+    "L2_7nm_32MiB_ReadLatency",
+    "L2_7nm_32MiB_ReadDynamicEnergy",
+    "L2_14nm_32MiB_ReadLatency",
+    "L2_14nm_32MiB_ReadDynamicEnergy"
+  ],
+  "available_metadata_hashes_verified": 7
+}

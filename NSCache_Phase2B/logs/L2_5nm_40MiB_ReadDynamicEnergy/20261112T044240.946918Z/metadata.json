@@ -1,0 +1,31 @@
+{
+  "run_id": "L2_5nm_40MiB_ReadDynamicEnergy",
+  "node_nm": 5,
+  "capacity_mib": 40,
+  "objective": "ReadDynamicEnergy",
+  "group": "bridge",
+  "config": "configs/L2_5nm_40MiB_ReadDynamicEnergy.cfg",
+  "config_sha256": "b9b5dda36008a361c48fd57d222700798523afcf2bc4c6e6d102dfc2c40b849e",
+  "source": "NSCache_Phase2A/configs/phase2_256bit/L2_5nm_ReadEnergy.cfg",
+  "source_sha256": "c128d51e0656c827e01752a17919f9fb344de1bd5c3537504c2f63515539c2f3",
+  "change": "Capacity (MB): 1 -> 40; binary MiB; all other settings unchanged",
+  "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+  "cell_sha256": "4c8fa9ab6522f5c0dbbee83a0fed50d87bd3b138407ce37bb14f52b4e221e1c0",
+  "environment_sha256": "e9729b7c78b0610a2f1aea95fd7e55556618ebe3ff8461e76205b47a1c28b56e",
+  "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "started_utc": "2026-11-12T04:42:40.948764+00:00",
+  "command": [
+    "build/nsc",
+    "config/cases/L2_5nm_40MiB_ReadDynamicEnergy.cfg"
+  ],
+  "cwd": "runtime/L2_5nm_40MiB_ReadDynamicEnergy",
+  "status": "FAILED",
+  "returncode": 255,
+  "elapsed_seconds": 0.20083490500007883,
+  "max_rss_kib": 14764,
+  "user_cpu_seconds": 0.002918,
+  "system_cpu_seconds": 0.0,
+  "finished_utc": "2026-11-12T04:42:41.149887+00:00",
+  "stdout_sha256": "3e505240fc13e67be0925dd38531b210fa3c192b2de93ac1b17363d697f28fa5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

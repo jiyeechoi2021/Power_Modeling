@@ -1,0 +1,27 @@
+User-defined configuration file (config/cases/L2_14nm_6MiB_ReadLatency.cfg) is loaded
+
+
+====================
+DESIGN SPECIFICATION
+====================
+Design Target: Cache
+Capacity   : 6MB
+Cache Line Size: 32Bytes
+Cache Associativity: 16 Ways
+Relax SRAM Cell: Enabled
+Bank Aspect Ratio Limit: 3.000
+Forced Data MAT Size: Disabled
+DRAM Target Residual Ratio: 0.100
+Monolithic 3D MAT: Disabled
+Monolithic MAT Tier Limit: 4
+
+Searching for the best solution that is optimized for read latency ...
+Using cell file: config/New_Configs/SRAM_cell_14nm.cell
+1 Bank = 1x1 SubArrays
+Activation - 1x1 SubArrays
+1 SubArray  = 1x1 Mats
+Activation - 1x1 Mats
+Mux Degree - 1 x 1 x 1
+ERROR: DATA capacity violation. Shouldn't happen
+Saw 4194304
+Expected 6291456
