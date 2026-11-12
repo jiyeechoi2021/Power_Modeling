@@ -1,0 +1,12 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "python": "3.12.14",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "make": "GNU Make 4.4.1\nBuilt for x86_64-pc-linux-gnu\nCopyright (C) 1988-2023 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.",
+  "repository_base": "6609b1ac56d43fa7d06a5e3b79cd678f6d14a492",
+  "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "build_command": "make -C ../NSCache_Experiment_DB/source -j 2 target=/workspace/Power_Modeling/NSCache_Phase2C/build/nsc OUTDIR=/workspace/Power_Modeling/NSCache_Phase2C/build/obj",
+  "flags": "-std=c++17 -Wall -O3 -mtune=native"
+}
+
