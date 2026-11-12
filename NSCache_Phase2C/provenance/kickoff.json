@@ -1,0 +1,16 @@
+{
+  "base": "6609b1ac56d43fa7d06a5e3b79cd678f6d14a492",
+  "remote_refs": {
+    "main": "51208723a98c9df7a267126b3477a59837b14812",
+    "phase1": "26ba7529fcb356c82b1813b6030f54746ccb3cc3",
+    "phase2a": "820fe02a95009985510c4810c2044aaa8c7e610e",
+    "phase2b": "6609b1ac56d43fa7d06a5e3b79cd678f6d14a492"
+  },
+  "expected_base_matches_actual": true,
+  "prs_1_2_3_status": "GitHub GraphQL Forbidden; UI state unverified; no PR edited or merged",
+  "whitepaper_url": "https://images.nvidia.com/aem-dam/en-zz/Solutions/data-center/nvidia-ampere-architecture-whitepaper.pdf",
+  "whitepaper_page": 35,
+  "whitepaper_verification": "supplied task citation; direct retrieval HTTP 403, no original text independently verified",
+  "capacity_parser": "InputParameter.cpp 318-327; KB integer *1024; MB integer *1024^2",
+  "deferred": "No P0-P3 work, no other capacities rerun, no model source/organization/Vdd interventions, no GPU validation or Rubin prediction"
+}

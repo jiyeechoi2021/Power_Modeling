@@ -1,0 +1,329 @@
+{
+  "upstream_commit": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "files": [
+    {
+      "file": "source/AOSFETCompactModel.cpp",
+      "sha256": "8c18fac6631809e01367a14673e984f3c2681e33e36391b63b9bba1c5a888c95",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/AOSFETCompactModel.h",
+      "sha256": "b0547c61a59096448853960e03b78568c06ebf90cd33e47896a11e0bec3905c3",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Bank.cpp",
+      "sha256": "e387674f4c67bdc0b270eef6369ab9667b4146276304328660a45f52664dd574",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Bank.h",
+      "sha256": "7b4b5abf145cad71cfc8fb98c048c8dcf6e93121cf07db3eb1dc1edd6a1353a8",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/BankWithHtree.cpp",
+      "sha256": "cf85c56b3499e93860af91cbc5f3fcacda85dc582afb2c9208da6d11f0776c7d",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/BankWithHtree.h",
+      "sha256": "d18124f5cf79abae13b467413aed113cac69aad7c58c35f61842c53646f0c5b2",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/BankWithoutHtree.cpp",
+      "sha256": "24dbf794cf742248698ce7b7a7bfc021677468a07138bf7129be97b46ed7fcae",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/BankWithoutHtree.h",
+      "sha256": "eef20805dad2f1a1d51f98f2a8271bd2f055c7b9580ef359967872a0375bd41b",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/BasicDecoder.cpp",
+      "sha256": "e6c0e22635df66bbad5de4bcc815faaf13a10659a6533c686fdb18b3eb40bb36",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/BasicDecoder.h",
+      "sha256": "1842abcbdee8a021901f41a39f0a006565d2f7f7bc83dddfe87f77f6a41d2c1e",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/BinarySenseAmp.cpp",
+      "sha256": "ce713f3c4a9338258d67dbe270621af4bf25c41d9ba5f280ff41dd715a59ef13",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/BinarySenseAmp.h",
+      "sha256": "04c29005d9c49b3b779d4213d3b7415ee469d92576494d71375e851e07e1da89",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Comparator.cpp",
+      "sha256": "12548a3c0fdf38ea10e56f8e3186f1601c95a58d7473bd00af2ba6e36dde0183",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Comparator.h",
+      "sha256": "e81c2cfe72a319e93c9aa6e83414244bebf11ecf93585ff87c95d2ff42a5a468",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/FunctionUnit.cpp",
+      "sha256": "3d4e6bad1b834738361f1a35a6571ba6435fc57bcfc84d7ab4d93310aebe2505",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/FunctionUnit.h",
+      "sha256": "349f9273073cba99e2a9cb7c0cb948890e32c15119b08e9b3ade7808a61947c4",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/InputParameter.cpp",
+      "sha256": "5a300096ee0011cf93cd6ee539b036e71ad12a22c735a8601b8f3bcc29c2d724",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/InputParameter.h",
+      "sha256": "28204e03cceb9645f748dbd2227e39629c2614c02478d9a6cb11abd7b54310d5",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/LeveShifter.cpp",
+      "sha256": "63fc3ae778c84886069a2bfa12d57bc7eb849cf29b92c2558d24498510bad412",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/LevelShifter.h",
+      "sha256": "17cba3930ce7f84fe169c2b85c472e66183abd24199923f63777faf94eb64da5",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Makefile",
+      "sha256": "a9ac140422fe4760ff4950088119499e9dc136a20ccdc405a080dd0396595f43",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Mat.cpp",
+      "sha256": "b467d46921dcefe62657769ea80d93f36d7ee93626ab5687fc530d9df8aecaeb",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Mat.h",
+      "sha256": "4dda7d04be0d390b805aa842d51d74e7b29d91970d14b07f7a686ecea13421c9",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/MemCell.cpp",
+      "sha256": "01d85b032f790c8617fd93a1fe0b456c53af289417215eee886a41c8a04220c2",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/MemCell.h",
+      "sha256": "4d144d07075bc73342fbf32a3f74ae8c274d0534de2f201ddcc372e90c011b13",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Mux.cpp",
+      "sha256": "015cf3beb26b43e566ab868f5b3c8b9cf13ddfcbd9c0ce37d67be1a556fcc9f7",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Mux.h",
+      "sha256": "658f2f9348879451c22bcec3eecc68e9442aa068f6c4c3cf2ba7fccccf3c260d",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/OutputDriver.cpp",
+      "sha256": "a8260c8b8bb716f2e516dbda5618ff3d5780161acb755cc0403b47f449e74d1d",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/OutputDriver.h",
+      "sha256": "a3973e421aab080a1f2cd9a01f6f1bf8bc1e0d516b56be3b1884185df8cdf76f",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Precharger.cpp",
+      "sha256": "44252ff743f43e07aa1f81d53ab85e0793ff6a03fc45436be059f4ea6e462e5b",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Precharger.h",
+      "sha256": "1dad01359c740264ff75e5ad4f5ddfebba92add78fae79387a4434d789ede71c",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/PredecodeBlock.cpp",
+      "sha256": "2820223d67cbc99f5dc8e849d25d66a46e2bf06711effcc81f3bd3cc7dda1cc0",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/PredecodeBlock.h",
+      "sha256": "b6b8ae5eacb717f14575b3b55572f28eb4d217070adddfec332697f3b628c8c9",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Result.cpp",
+      "sha256": "c8354cc4ed42e124f8693af4655e02eb76b5b1d8d72ff4d3f7180cf7becc101e",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Result.h",
+      "sha256": "b9c1bb1722167b2cd30f07c3d527e1d16f7ba8e6625be6bbff608e1137ebd9a7",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/RowDecoder.cpp",
+      "sha256": "e0d7d754a4e12e0790919cabdeb5ed9ed4f56ef7915bc285c1da36b167c0c2b0",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/RowDecoder.h",
+      "sha256": "4968ebad68669dd173e72f5df88a52624bfb07f9b1d8bcf8a986419799fd835f",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/SenseAmp.cpp",
+      "sha256": "1a90ef46234adba290abbc162303c5dad8c2d21ba0d7a85c061905918e0231ed",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/SenseAmp.h",
+      "sha256": "cf63c5fa0fb28b53b2a6904338e26442666c2df81e91a4dc0de0010c56ae2e20",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/SubArray.cpp",
+      "sha256": "602167227a735a7e44b8a69c1f10d6ea5ac9e1f62f9360ecf8e73ab742490d6b",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/SubArray.h",
+      "sha256": "202e0ba28219d0bfb6af79d7920419cbd01fa9d8ec3e4a4d4711ddff403ed647",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/TSV.cpp",
+      "sha256": "656a8eda9ddb8cca754735c5a4b5d60db8c656a499559395325b934f7ef679bd",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/TSV.h",
+      "sha256": "8cf826145daefab4e5d97180fb862e53bbba84e73f44dadc23d492c009fbcdea",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Technology.cpp",
+      "sha256": "604e70d745efd3c7aaa73c6709b89d548cbf7fb2537f21e34eedf6b5c1cf43d2",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Technology.h",
+      "sha256": "00665a2dd16cb2c1d2dfce26e76f1500269d56474685679060ee51f274e7d3f0",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Wire.cpp",
+      "sha256": "2322db2d87d70cd012a7e338796c797836f5dce093e725df5ea6c37ed75471c6",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/Wire.h",
+      "sha256": "3e5c1b999b0abc1319e8e00bdbe153cfd287608b3fc9089a3444ddc1b5883657",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/constant.h",
+      "sha256": "921b237a54cc3637a39498edc77e6e51e6d2048536be3e1e475dc357b94afa87",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/formula.cpp",
+      "sha256": "61aece984b717d4f3334b391c64c55d291e5bbb8646381f62f2d54e070b0ab21",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/formula.h",
+      "sha256": "18596d291a4d9fc37b98f0f98f80704b5834b1e800056ad5fdf3e1d9002c4992",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/global.h",
+      "sha256": "49667b9d95f0a44c10bda37335379d2da3d0a3d8f313a20370871da409901447",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/macros.h",
+      "sha256": "0735100e89b660d45d689e31ed74ff960480752f911c00936aaca5eb09f0a65e",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/main.cpp",
+      "sha256": "4f43c109dd161c30f760fa850ecc1931051c893282626a3a11069b3822a54121",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    },
+    {
+      "file": "source/typedef.h",
+      "sha256": "3013ac95887db593848392f20e84de6b5e3e0aff7c270900e4938d9eb283e80f",
+      "upstream_exists": true,
+      "upstream_byte_equal": true
+    }
+  ]
+}
