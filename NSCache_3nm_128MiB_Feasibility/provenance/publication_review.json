@@ -1,0 +1,15 @@
+{
+  "scope": "Only NSCache_3nm_128MiB_Feasibility changes from verified Phase 2-C base",
+  "numeric_input_allowlist": [
+    "independently generated Phase 2-B NS-Cache 3nm 32MiB raw stdout and associated public model inputs",
+    "two independently generated capacity-only 128MiB NS-Cache raw stdout files",
+    "public model/source/cell/config/tool metadata and hashes",
+    "0.917 pJ/bit: task-described published LLMET SRAM reference, not user GPU measurement; source semantics explicitly unverified"
+  ],
+  "forbidden_inputs_used": false,
+  "private_gpu_data_present": false,
+  "private_or_reconstructible_gpu_derivatives_present": false,
+  "author_correspondence_copied": false,
+  "review_method": "Read staged new-file inventory and every staged textual artifact; validate result lineage through raw-only tests and permitted-input call graph; check outgoing commit diff stays inside study directory before push",
+  "qualification": "Comparisons against a reported public paper scalar are not private GPU scaling or calibration; no original GPU coefficient is an input or recoverable from these outputs"
+}

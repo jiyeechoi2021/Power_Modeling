@@ -1,0 +1,36 @@
+[
+  {
+    "run_id": "L2_3nm_128MiB_ReadLatency",
+    "node_nm": 3,
+    "objective": "ReadLatency",
+    "capacity_mib": 128,
+    "capacity_bytes": 134217728,
+    "width_bits": 256,
+    "config": "configs/L2_3nm_128MiB_ReadLatency.cfg",
+    "config_sha256": "83b472851b60048ca477b4bd91c4db5a9c0cd86b0e599e01b81bf05ffbc5ff48",
+    "source_config": "NSCache_Phase2B/configs/L2_3nm_32MiB_ReadLatency.cfg",
+    "source_config_sha256": "f6ac04e3cefa4327a7a14b401b43ea57fcbc2ab527000d34a05ed6199300c5d9",
+    "cell": "NSCache_Experiment_DB/configs/New_Configs/SRAM_cell_3nm.cell",
+    "cell_sha256": "de745c1e1c9b40d2162a4fe6fdeb45f5423ce4bfd9b7034efe8a7aca90a494c3",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "derivation": "Capacity (MB): 32 -> 128 only; reconstruction, not author configuration",
+    "diff": "--- NSCache_Phase2B/configs/L2_3nm_32MiB_ReadLatency.cfg\n+++ NSCache_3nm_128MiB_Feasibility/configs/L2_3nm_128MiB_ReadLatency.cfg\n@@ -6,7 +6,7 @@\n \n -ProcessNode: 3\n \n--Capacity (MB): 32\n+-Capacity (MB): 128\n -WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n"
+  },
+  {
+    "run_id": "L2_3nm_128MiB_ReadDynamicEnergy",
+    "node_nm": 3,
+    "objective": "ReadDynamicEnergy",
+    "capacity_mib": 128,
+    "capacity_bytes": 134217728,
+    "width_bits": 256,
+    "config": "configs/L2_3nm_128MiB_ReadDynamicEnergy.cfg",
+    "config_sha256": "b274dc692b29df141c0fbb8c41ae6c0fe27d1d31bec73f9d68023ea587acc469",
+    "source_config": "NSCache_Phase2B/configs/L2_3nm_32MiB_ReadDynamicEnergy.cfg",
+    "source_config_sha256": "bd8ef14285d2ac4478c97e7a2b10896203fc7cb6f1f01f98a1d0a57ba5b4cb60",
+    "cell": "NSCache_Experiment_DB/configs/New_Configs/SRAM_cell_3nm.cell",
+    "cell_sha256": "de745c1e1c9b40d2162a4fe6fdeb45f5423ce4bfd9b7034efe8a7aca90a494c3",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "derivation": "Capacity (MB): 32 -> 128 only; reconstruction, not author configuration",
+    "diff": "--- NSCache_Phase2B/configs/L2_3nm_32MiB_ReadDynamicEnergy.cfg\n+++ NSCache_3nm_128MiB_Feasibility/configs/L2_3nm_128MiB_ReadDynamicEnergy.cfg\n@@ -6,7 +6,7 @@\n \n -ProcessNode: 3\n \n--Capacity (MB): 32\n+-Capacity (MB): 128\n -WordWidth (bit): 256\n \n -DeviceRoadmap: LOP\n"
+  }
+]

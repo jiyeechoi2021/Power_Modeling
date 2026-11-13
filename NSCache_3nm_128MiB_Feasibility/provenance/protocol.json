@@ -1,0 +1,16 @@
+{
+  "scope": "Controlled 3nm 32MiB verification and capacity-only 128MiB feasibility, not fitting",
+  "base_commit": "ac34dfad49a0ed33ab368ac50d438022f557df41",
+  "new_branch": "research/nscache-3nm-128mib-feasibility",
+  "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+  "source_file_count": 54,
+  "baseline_policy": "Verify both existing Phase 2-B 3nm 32MiB raw runs and metadata hashes; do not rerun historical jobs",
+  "new_cases": "Two 128MiB reconstructions, inheriting the two validated objectives; capacity is the only changed parameter",
+  "max_workers": 2,
+  "timeout_seconds": 1800,
+  "resources": "5 CPU, 33GiB host; per-child Linux wait4 CPU/max RSS recorded, no hard memory limit claimed",
+  "reference_use": "0.917 pJ/bit is a published LLMET Table 2 scalar as described in task; not an execution or parameter-selection input",
+  "author_config": "Unavailable; user confirms email request pending. Do not publish author correspondence",
+  "public_paper_lookup": "No paper URL/DOI/PDF in available repository/attachments; public arXiv API search returned HTTP 403",
+  "confidentiality": "Only independently generated NS-Cache data and reported public-paper reference. No private GPU measurement, fitted coefficient, calibration or reconstructible derivative is used. Inspect staged files and outgoing commit diff before push."
+}

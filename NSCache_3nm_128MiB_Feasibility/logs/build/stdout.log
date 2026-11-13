@@ -1,0 +1,54 @@
+make: Entering directory '/workspace/Power_Modeling/NSCache_Experiment_DB/source'
+mkdir -p /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/AOSFETCompactModel.d -c AOSFETCompactModel.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/AOSFETCompactModel.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Bank.d -c Bank.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Bank.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BankWithHtree.d -c BankWithHtree.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BankWithHtree.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BankWithoutHtree.d -c BankWithoutHtree.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BankWithoutHtree.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BasicDecoder.d -c BasicDecoder.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BasicDecoder.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BinarySenseAmp.d -c BinarySenseAmp.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BinarySenseAmp.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Comparator.d -c Comparator.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Comparator.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/FunctionUnit.d -c FunctionUnit.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/FunctionUnit.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/InputParameter.d -c InputParameter.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/InputParameter.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/LeveShifter.d -c LeveShifter.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/LeveShifter.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Mat.d -c Mat.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Mat.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/MemCell.d -c MemCell.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/MemCell.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Mux.d -c Mux.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Mux.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/OutputDriver.d -c OutputDriver.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/OutputDriver.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Precharger.d -c Precharger.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Precharger.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/PredecodeBlock.d -c PredecodeBlock.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/PredecodeBlock.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Result.d -c Result.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Result.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/RowDecoder.d -c RowDecoder.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/RowDecoder.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/SenseAmp.d -c SenseAmp.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/SenseAmp.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/SubArray.d -c SubArray.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/SubArray.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/TSV.d -c TSV.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/TSV.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Technology.d -c Technology.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Technology.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Wire.d -c Wire.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Wire.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/formula.d -c formula.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/formula.o
+g++  -std=c++17 -Wall  -O3 -mtune=native \
+	-MMD -MP -MF /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/main.d -c main.cpp -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/main.o
+g++ -O3 -mtune=native  /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/AOSFETCompactModel.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Bank.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BankWithHtree.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BankWithoutHtree.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BasicDecoder.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/BinarySenseAmp.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Comparator.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/FunctionUnit.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/InputParameter.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/LeveShifter.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Mat.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/MemCell.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Mux.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/OutputDriver.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Precharger.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/PredecodeBlock.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Result.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/RowDecoder.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/SenseAmp.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/SubArray.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/TSV.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Technology.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/Wire.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/formula.o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/obj/main.o  -o /workspace/Power_Modeling/NSCache_3nm_128MiB_Feasibility/build/nsc
+make: Leaving directory '/workspace/Power_Modeling/NSCache_Experiment_DB/source'

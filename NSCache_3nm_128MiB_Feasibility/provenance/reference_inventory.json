@@ -1,0 +1,10 @@
+{
+  "scope": "all tracked .cfg files and cfg members of tracked ZIPs at verified Phase 2-C base; available attachments contain only 32MiB archive and Phase 2-C instructions",
+  "checked_config_records": 136,
+  "matching_3nm_128MiB_reference_configs": [],
+  "author_original_config_status": "unavailable; user confirms requested by email and awaiting authors",
+  "public_paper_identity": "LLMET Table 2 reference described in user task; full URL/DOI/PDF not supplied or present",
+  "reference_value_pj_bit": "0.917",
+  "reference_class": "reported published paper value supplied in task, not GPU measurement or private coefficient; source text/operation/normalization not independently verified",
+  "closest_local_template": "NSCache_Experiment_DB/configs/New_Configs/SRAM_cache_3nm.cfg is 32MiB, WordWidth512, WriteLatency, not a 128MiB author config"
+}
