@@ -1,0 +1,2306 @@
+[
+  {
+    "run_id": "L2_3nm_128MiB_ReadLatency",
+    "node_nm": 3,
+    "objective": "ReadLatency",
+    "capacity_mib": 128,
+    "capacity_bytes": 134217728,
+    "width_bits": 256,
+    "associativity": 16,
+    "temperature_k": 300,
+    "roadmap": "LOP",
+    "source_derived_vdd_v": "0.7",
+    "cell_read_voltage_v": "0.248",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "origin": "verified_historical_raw",
+    "energy_unit": "pJ/model_access",
+    "normalized_unit": "effective_pJ/bit_32B_model_line",
+    "latency_unit": "ns",
+    "area_unit": "mm2",
+    "leakage_unit": "mW",
+    "config": "NSCache_3nm_128MiB_Feasibility/configs/L2_3nm_128MiB_ReadLatency.cfg",
+    "status": "FINISHED",
+    "returncode": 0,
+    "elapsed_seconds": 134.916260716,
+    "max_rss_kib": 14336,
+    "metadata": "NSCache_3nm_128MiB_Feasibility/logs/L2_3nm_128MiB_ReadLatency/20261113T061848.769717Z/metadata.json",
+    "stdout": "NSCache_3nm_128MiB_Feasibility/logs/L2_3nm_128MiB_ReadLatency/20261113T061848.769717Z/stdout.log",
+    "stderr": "NSCache_3nm_128MiB_Feasibility/logs/L2_3nm_128MiB_ReadLatency/20261113T061848.769717Z/stderr.log",
+    "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+    "config_sha256": "83b472851b60048ca477b4bd91c4db5a9c0cd86b0e599e01b81bf05ffbc5ff48",
+    "stdout_sha256": "2390d7fef2b2afd5d9ebe510a934de56c32e75dcfc00180dca13384245029711",
+    "read_pj_per_access": "369.000",
+    "write_pj_per_access": "246.000",
+    "leakage_mw": "28.956",
+    "hit_latency_ns": "44.903",
+    "area_mm2": "24.061",
+    "feasible_solutions": "1440",
+    "read_summary_pj": "369.000",
+    "read_summary_effective_pj_bit": "1.44140625",
+    "read_bank_sum_pj": "368.565",
+    "read_bank_effective_pj_bit": "1.43970703125",
+    "read_rounding_delta_bank_minus_summary_pj": "-0.435",
+    "read_data_bank_pj": "354.758",
+    "read_tag_bank_pj": "13.807",
+    "read_routing_pj": "242.597",
+    "read_nonrouting_residual_pj": "125.968",
+    "read_summary_resolution_pj": "1",
+    "read_data_bank_resolution_pj": "0.001",
+    "read_tag_bank_resolution_pj": "0.001",
+    "read_bank_sum_rounding_bound_pj": "0.001",
+    "read_summary_bank_difference_bound_pj": "0.501",
+    "write_summary_pj": "246.000",
+    "write_summary_effective_pj_bit": "0.9609375",
+    "write_bank_sum_pj": "246.456",
+    "write_bank_effective_pj_bit": "0.96271875",
+    "write_rounding_delta_bank_minus_summary_pj": "0.456",
+    "write_data_bank_pj": "237.196",
+    "write_tag_bank_pj": "9.260",
+    "write_routing_pj": "242.597",
+    "write_nonrouting_residual_pj": "3.859",
+    "write_summary_resolution_pj": "1",
+    "write_data_bank_resolution_pj": "0.001",
+    "write_tag_bank_resolution_pj": "0.001",
+    "write_bank_sum_rounding_bound_pj": "0.001",
+    "write_summary_bank_difference_bound_pj": "0.501",
+    "organization": {
+      "data": {
+        "raw_configuration": "Bank Organization: 4 x 4\n     - Row Activation   : 2 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 8192 Rows x 2048 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "4 x 4",
+        "subarray": "2 x 2",
+        "mat": "8192 Rows x 2048 Columns"
+      },
+      "tag": {
+        "raw_configuration": "Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 128 Rows x 3456 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 8\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "64 x 1",
+        "subarray": "2 x 2",
+        "mat": "128 Rows x 3456 Columns"
+      }
+    },
+    "breakdown": {
+      "data": {
+        "configuration_detail": "=============\n    Bank Organization: 4 x 4\n     - Row Activation   : 2 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 8192 Rows x 2048 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "354.758",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "234.749",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "60.005",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.256",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "59.749",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.194",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.358",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.219",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.189",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "0.923",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "237.196",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "234.749",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "1.224",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.256",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "0.968",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.194",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.358",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.189",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      },
+      "tag": {
+        "configuration_detail": "=============\n    Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 128 Rows x 3456 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 8\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "13.807",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "7.848",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "5.960",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.474",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "5.485",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.323",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.602",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "1.481",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.001",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "1.552",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "9.260",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "7.848",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "1.413",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.474",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "0.938",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.323",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.602",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.001",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      }
+    },
+    "analysis_status": "VALID",
+    "derived_data_array_bytes": 134217728,
+    "write_latency_ns": "38.089",
+    "bank_timing": {
+      "data": {
+        "read_latency_ns": "41.161",
+        "write_latency_ns": "38.089"
+      },
+      "tag": {
+        "read_latency_ns": "19.227",
+        "write_latency_ns": "18.685"
+      }
+    }
+  },
+  {
+    "run_id": "L2_3nm_1024MiB_ReadLatency",
+    "node_nm": 3,
+    "objective": "ReadLatency",
+    "capacity_mib": 1024,
+    "capacity_bytes": 1073741824,
+    "width_bits": 256,
+    "associativity": 16,
+    "temperature_k": 300,
+    "roadmap": "LOP",
+    "source_derived_vdd_v": "0.7",
+    "cell_read_voltage_v": "0.248",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "origin": "primary_1gib",
+    "energy_unit": "pJ/model_access",
+    "normalized_unit": "effective_pJ/bit_32B_model_line",
+    "latency_unit": "ns",
+    "area_unit": "mm2",
+    "leakage_unit": "mW",
+    "config": "NSCache_1GiB_Feasibility/configs/L2_3nm_1024MiB_ReadLatency.cfg",
+    "status": "FINISHED",
+    "returncode": 0,
+    "elapsed_seconds": 173.98652791999984,
+    "max_rss_kib": 15148,
+    "metadata": "NSCache_1GiB_Feasibility/logs/L2_3nm_1024MiB_ReadLatency/20261113T065413.783440Z/metadata.json",
+    "stdout": "NSCache_1GiB_Feasibility/logs/L2_3nm_1024MiB_ReadLatency/20261113T065413.783440Z/stdout.log",
+    "stderr": "NSCache_1GiB_Feasibility/logs/L2_3nm_1024MiB_ReadLatency/20261113T065413.783440Z/stderr.log",
+    "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+    "config_sha256": "eda85d18863a75bd6aaf69f0f5f2e9a7e55b3d1f249fd8c588ec3a92faea71ea",
+    "stdout_sha256": "bec33ebab407ab584c78e71ebb2620a16bd09706a0cbbba95b3373318c72192d",
+    "read_pj_per_access": "1805.000",
+    "write_pj_per_access": "806.000",
+    "leakage_mw": "225.752",
+    "hit_latency_ns": "317.792",
+    "area_mm2": "187.375",
+    "feasible_solutions": "1287",
+    "read_summary_pj": "1805.000",
+    "read_summary_effective_pj_bit": "7.05078125",
+    "read_bank_sum_pj": "1804.843",
+    "read_bank_effective_pj_bit": "7.05016796875",
+    "read_rounding_delta_bank_minus_summary_pj": "-0.157",
+    "read_data_bank_pj": "1656.000",
+    "read_tag_bank_pj": "148.843",
+    "read_routing_pj": "790.111",
+    "read_nonrouting_residual_pj": "1014.732",
+    "read_summary_resolution_pj": "1",
+    "read_data_bank_resolution_pj": "1.000",
+    "read_tag_bank_resolution_pj": "0.001",
+    "read_bank_sum_rounding_bound_pj": "0.5005",
+    "read_summary_bank_difference_bound_pj": "1.0005",
+    "write_summary_pj": "806.000",
+    "write_summary_effective_pj_bit": "3.1484375",
+    "write_bank_sum_pj": "806.105",
+    "write_bank_effective_pj_bit": "3.14884765625",
+    "write_rounding_delta_bank_minus_summary_pj": "0.105",
+    "write_data_bank_pj": "722.165",
+    "write_tag_bank_pj": "83.940",
+    "write_routing_pj": "790.111",
+    "write_nonrouting_residual_pj": "15.994",
+    "write_summary_resolution_pj": "1",
+    "write_data_bank_resolution_pj": "0.001",
+    "write_tag_bank_resolution_pj": "0.001",
+    "write_bank_sum_rounding_bound_pj": "0.001",
+    "write_summary_bank_difference_bound_pj": "0.501",
+    "organization": {
+      "data": {
+        "raw_configuration": "Bank Organization: 4 x 4\n     - Row Activation   : 2 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 16384 Rows x 8192 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 2\n     - Output Level-2 Mux: 2\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "4 x 4",
+        "subarray": "2 x 2",
+        "mat": "16384 Rows x 8192 Columns"
+      },
+      "tag": {
+        "raw_configuration": "Bank Organization: 64 x 1\n     - Row Activation   : 4 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 512 Rows x 6144 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 64\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "64 x 1",
+        "subarray": "2 x 2",
+        "mat": "512 Rows x 6144 Columns"
+      }
+    },
+    "breakdown": {
+      "data": {
+        "configuration_detail": "=============\n    Bank Organization: 4 x 4\n     - Row Activation   : 2 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 16384 Rows x 8192 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 2\n     - Output Level-2 Mux: 2\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "1656.000",
+            "printed_resolution_pj": "1.000",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "714.129",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "471.031",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.660",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "470.372",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.756",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.394",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.878",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.757",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "3.671",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "722.165",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "714.129",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "4.018",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.660",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "3.359",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.756",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.394",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.757",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      },
+      "tag": {
+        "configuration_detail": "=============\n    Bank Organization: 64 x 1\n     - Row Activation   : 4 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 512 Rows x 6144 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 64\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "148.843",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "75.982",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "18.215",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.357",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "17.859",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.569",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.051",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "2.633",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.002",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "2.754",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "83.940",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "75.982",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "1.989",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.357",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "1.633",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.569",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.051",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.002",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      }
+    },
+    "analysis_status": "VALID",
+    "derived_data_array_bytes": 1073741824,
+    "write_latency_ns": "254.945",
+    "bank_timing": {
+      "data": {
+        "read_latency_ns": "264.216",
+        "write_latency_ns": "254.945"
+      },
+      "tag": {
+        "read_latency_ns": "60.982",
+        "write_latency_ns": "58.997"
+      }
+    }
+  },
+  {
+    "run_id": "L2_3nm_128MiB_ReadDynamicEnergy",
+    "node_nm": 3,
+    "objective": "ReadDynamicEnergy",
+    "capacity_mib": 128,
+    "capacity_bytes": 134217728,
+    "width_bits": 256,
+    "associativity": 16,
+    "temperature_k": 300,
+    "roadmap": "LOP",
+    "source_derived_vdd_v": "0.7",
+    "cell_read_voltage_v": "0.248",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "origin": "verified_historical_raw",
+    "energy_unit": "pJ/model_access",
+    "normalized_unit": "effective_pJ/bit_32B_model_line",
+    "latency_unit": "ns",
+    "area_unit": "mm2",
+    "leakage_unit": "mW",
+    "config": "NSCache_3nm_128MiB_Feasibility/configs/L2_3nm_128MiB_ReadDynamicEnergy.cfg",
+    "status": "FINISHED",
+    "returncode": 0,
+    "elapsed_seconds": 144.52335554099997,
+    "max_rss_kib": 14336,
+    "metadata": "NSCache_3nm_128MiB_Feasibility/logs/L2_3nm_128MiB_ReadDynamicEnergy/20261113T061848.770073Z/metadata.json",
+    "stdout": "NSCache_3nm_128MiB_Feasibility/logs/L2_3nm_128MiB_ReadDynamicEnergy/20261113T061848.770073Z/stdout.log",
+    "stderr": "NSCache_3nm_128MiB_Feasibility/logs/L2_3nm_128MiB_ReadDynamicEnergy/20261113T061848.770073Z/stderr.log",
+    "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+    "config_sha256": "b274dc692b29df141c0fbb8c41ae6c0fe27d1d31bec73f9d68023ea587acc469",
+    "stdout_sha256": "79649ad13a5e267eef82b737f9f9b14d5c24383ac2783e3493a4fbc0f7946be5",
+    "read_pj_per_access": "349.000",
+    "write_pj_per_access": "228.000",
+    "leakage_mw": "28.700",
+    "hit_latency_ns": "85.464",
+    "area_mm2": "23.911",
+    "feasible_solutions": "1440",
+    "read_summary_pj": "349.000",
+    "read_summary_effective_pj_bit": "1.36328125",
+    "read_bank_sum_pj": "348.872",
+    "read_bank_effective_pj_bit": "1.36278125",
+    "read_rounding_delta_bank_minus_summary_pj": "-0.128",
+    "read_data_bank_pj": "341.991",
+    "read_tag_bank_pj": "6.881",
+    "read_routing_pj": "224.318",
+    "read_nonrouting_residual_pj": "124.554",
+    "read_summary_resolution_pj": "1",
+    "read_data_bank_resolution_pj": "0.001",
+    "read_tag_bank_resolution_pj": "0.001",
+    "read_bank_sum_rounding_bound_pj": "0.001",
+    "read_summary_bank_difference_bound_pj": "0.501",
+    "write_summary_pj": "228.000",
+    "write_summary_effective_pj_bit": "0.890625",
+    "write_bank_sum_pj": "228.066",
+    "write_bank_effective_pj_bit": "0.8908828125",
+    "write_rounding_delta_bank_minus_summary_pj": "0.066",
+    "write_data_bank_pj": "224.437",
+    "write_tag_bank_pj": "3.629",
+    "write_routing_pj": "224.318",
+    "write_nonrouting_residual_pj": "3.748",
+    "write_summary_resolution_pj": "1",
+    "write_data_bank_resolution_pj": "0.001",
+    "write_tag_bank_resolution_pj": "0.001",
+    "write_bank_sum_rounding_bound_pj": "0.001",
+    "write_summary_bank_difference_bound_pj": "0.501",
+    "organization": {
+      "data": {
+        "raw_configuration": "Bank Organization: 4 x 4\n     - Row Activation   : 1 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 1\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 1\n     - Mat Size    : 8192 Rows x 4096 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "4 x 4",
+        "subarray": "2 x 1",
+        "mat": "8192 Rows x 4096 Columns"
+      },
+      "tag": {
+        "raw_configuration": "Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 128 Rows x 3456 Columns\n    Mux Level:\n     - Senseamp Mux      : 8\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     Yes\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "64 x 1",
+        "subarray": "2 x 2",
+        "mat": "128 Rows x 3456 Columns"
+      }
+    },
+    "breakdown": {
+      "data": {
+        "configuration_detail": "=============\n    Bank Organization: 4 x 4\n     - Row Activation   : 1 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 1\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 1\n     - Mat Size    : 8192 Rows x 4096 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "341.991",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "222.260",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "119.731",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.255",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "119.475",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.381",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.709",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.439",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.379",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "1.838",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "224.437",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "222.260",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "2.177",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.255",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "1.921",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.381",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.709",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.379",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      },
+      "tag": {
+        "configuration_detail": "=============\n    Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 128 Rows x 3456 Columns\n    Mux Level:\n     - Senseamp Mux      : 8\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     Yes\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "6.881",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "2.058",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "4.823",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.474",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "4.348",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.323",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.602",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.185",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.160",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "1.552",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "3.629",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "2.058",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "1.571",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.474",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "1.097",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.323",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.602",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.160",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      }
+    },
+    "analysis_status": "VALID",
+    "derived_data_array_bytes": 134217728,
+    "write_latency_ns": "68.747",
+    "bank_timing": {
+      "data": {
+        "read_latency_ns": "71.809",
+        "write_latency_ns": "68.747"
+      },
+      "tag": {
+        "read_latency_ns": "26.716",
+        "write_latency_ns": "22.544"
+      }
+    }
+  },
+  {
+    "run_id": "L2_3nm_1024MiB_ReadDynamicEnergy",
+    "node_nm": 3,
+    "objective": "ReadDynamicEnergy",
+    "capacity_mib": 1024,
+    "capacity_bytes": 1073741824,
+    "width_bits": 256,
+    "associativity": 16,
+    "temperature_k": 300,
+    "roadmap": "LOP",
+    "source_derived_vdd_v": "0.7",
+    "cell_read_voltage_v": "0.248",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "origin": "primary_1gib",
+    "energy_unit": "pJ/model_access",
+    "normalized_unit": "effective_pJ/bit_32B_model_line",
+    "latency_unit": "ns",
+    "area_unit": "mm2",
+    "leakage_unit": "mW",
+    "config": "NSCache_1GiB_Feasibility/configs/L2_3nm_1024MiB_ReadDynamicEnergy.cfg",
+    "status": "FINISHED",
+    "returncode": 0,
+    "elapsed_seconds": 175.78864075699994,
+    "max_rss_kib": 15148,
+    "metadata": "NSCache_1GiB_Feasibility/logs/L2_3nm_1024MiB_ReadDynamicEnergy/20261113T065413.783268Z/metadata.json",
+    "stdout": "NSCache_1GiB_Feasibility/logs/L2_3nm_1024MiB_ReadDynamicEnergy/20261113T065413.783268Z/stdout.log",
+    "stderr": "NSCache_1GiB_Feasibility/logs/L2_3nm_1024MiB_ReadDynamicEnergy/20261113T065413.783268Z/stderr.log",
+    "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+    "config_sha256": "4fd518edc36bd39be5ef15752b15a300ed9649d8b3ff73681a20882fafd97ca9",
+    "stdout_sha256": "2200c37e36f80f424987e979655806ae38f0949670cbcf050d0ff63f5290d1a0",
+    "read_pj_per_access": "1175.000",
+    "write_pj_per_access": "692.000",
+    "leakage_mw": "225.710",
+    "hit_latency_ns": "317.794",
+    "area_mm2": "187.524",
+    "feasible_solutions": "1287",
+    "read_summary_pj": "1175.000",
+    "read_summary_effective_pj_bit": "4.58984375",
+    "read_bank_sum_pj": "1174.730",
+    "read_bank_effective_pj_bit": "4.5887890625",
+    "read_rounding_delta_bank_minus_summary_pj": "-0.270",
+    "read_data_bank_pj": "1151.000",
+    "read_tag_bank_pj": "23.730",
+    "read_routing_pj": "683.843",
+    "read_nonrouting_residual_pj": "490.887",
+    "read_summary_resolution_pj": "1",
+    "read_data_bank_resolution_pj": "1.000",
+    "read_tag_bank_resolution_pj": "0.001",
+    "read_bank_sum_rounding_bound_pj": "0.5005",
+    "read_summary_bank_difference_bound_pj": "1.0005",
+    "write_summary_pj": "692.000",
+    "write_summary_effective_pj_bit": "2.703125",
+    "write_bank_sum_pj": "692.151",
+    "write_bank_effective_pj_bit": "2.70371484375",
+    "write_rounding_delta_bank_minus_summary_pj": "0.151",
+    "write_data_bank_pj": "684.917",
+    "write_tag_bank_pj": "7.234",
+    "write_routing_pj": "683.843",
+    "write_nonrouting_residual_pj": "8.308",
+    "write_summary_resolution_pj": "1",
+    "write_data_bank_resolution_pj": "0.001",
+    "write_tag_bank_resolution_pj": "0.001",
+    "write_bank_sum_rounding_bound_pj": "0.001",
+    "write_summary_bank_difference_bound_pj": "0.501",
+    "organization": {
+      "data": {
+        "raw_configuration": "Bank Organization: 4 x 4\n     - Row Activation   : 1 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 16384 Rows x 8192 Columns\n    Mux Level:\n     - Senseamp Mux      : 2\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "4 x 4",
+        "subarray": "2 x 2",
+        "mat": "16384 Rows x 8192 Columns"
+      },
+      "tag": {
+        "raw_configuration": "Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 256 Rows x 12288 Columns\n    Mux Level:\n     - Senseamp Mux      : 32\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     Yes\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "64 x 1",
+        "subarray": "2 x 2",
+        "mat": "256 Rows x 12288 Columns"
+      }
+    },
+    "breakdown": {
+      "data": {
+        "configuration_detail": "=============\n    Bank Organization: 4 x 4\n     - Row Activation   : 1 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 16384 Rows x 8192 Columns\n    Mux Level:\n     - Senseamp Mux      : 2\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "1151.000",
+            "printed_resolution_pj": "1.000",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "680.823",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "470.216",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.660",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "469.556",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.756",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.394",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.439",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.380",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "3.671",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "684.917",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "680.823",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "4.094",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.660",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "3.434",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.756",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.394",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.380",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      },
+      "tag": {
+        "configuration_detail": "=============\n    Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 256 Rows x 12288 Columns\n    Mux Level:\n     - Senseamp Mux      : 32\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     Yes\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "23.730",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "3.020",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "20.711",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.838",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "19.872",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "1.130",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "2.079",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.165",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.146",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "5.502",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "7.234",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "3.020",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "4.214",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.838",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "3.376",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "1.130",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "2.079",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.146",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      }
+    },
+    "analysis_status": "VALID",
+    "derived_data_array_bytes": 1073741824,
+    "write_latency_ns": "254.947",
+    "bank_timing": {
+      "data": {
+        "read_latency_ns": "264.218",
+        "write_latency_ns": "254.947"
+      },
+      "tag": {
+        "read_latency_ns": "225.742",
+        "write_latency_ns": "216.404"
+      }
+    }
+  },
+  {
+    "run_id": "L2_7nm_32MiB_ReadLatency",
+    "node_nm": 7,
+    "objective": "ReadLatency",
+    "capacity_mib": 32,
+    "capacity_bytes": 33554432,
+    "width_bits": 256,
+    "associativity": 16,
+    "temperature_k": 300,
+    "roadmap": "LOP",
+    "source_derived_vdd_v": "0.7",
+    "cell_read_voltage_v": "0.264",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "origin": "verified_historical_raw",
+    "energy_unit": "pJ/model_access",
+    "normalized_unit": "effective_pJ/bit_32B_model_line",
+    "latency_unit": "ns",
+    "area_unit": "mm2",
+    "leakage_unit": "mW",
+    "config": "NSCache_Phase2B/configs/L2_7nm_32MiB_ReadLatency.cfg",
+    "status": "FINISHED",
+    "returncode": 0,
+    "elapsed_seconds": 101.4926809640001,
+    "max_rss_kib": 14504,
+    "metadata": "NSCache_Phase2B/logs/L2_7nm_32MiB_ReadLatency/20261112T044511.566974Z/metadata.json",
+    "stdout": "NSCache_Phase2B/logs/L2_7nm_32MiB_ReadLatency/20261112T044511.566974Z/stdout.log",
+    "stderr": "NSCache_Phase2B/logs/L2_7nm_32MiB_ReadLatency/20261112T044511.566974Z/stderr.log",
+    "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+    "config_sha256": "d2e7834e4709c8f02bf60a123a87a020afd6156bc2de2527e614c6a336483bc7",
+    "stdout_sha256": "9070d76385c7156befd30dd5602cb73cf85c3ddfbaecc278bcb64d38d717272e",
+    "read_pj_per_access": "228.000",
+    "write_pj_per_access": "152.000",
+    "leakage_mw": "7.484",
+    "hit_latency_ns": "5.830",
+    "area_mm2": "8.804",
+    "feasible_solutions": "873",
+    "read_summary_pj": "228.000",
+    "read_summary_effective_pj_bit": "0.890625",
+    "read_bank_sum_pj": "227.784",
+    "read_bank_effective_pj_bit": "0.88978125",
+    "read_rounding_delta_bank_minus_summary_pj": "-0.216",
+    "read_data_bank_pj": "218.528",
+    "read_tag_bank_pj": "9.256",
+    "read_routing_pj": "148.087",
+    "read_nonrouting_residual_pj": "79.697",
+    "read_summary_resolution_pj": "1",
+    "read_data_bank_resolution_pj": "0.001",
+    "read_tag_bank_resolution_pj": "0.001",
+    "read_bank_sum_rounding_bound_pj": "0.001",
+    "read_summary_bank_difference_bound_pj": "0.501",
+    "write_summary_pj": "152.000",
+    "write_summary_effective_pj_bit": "0.59375",
+    "write_bank_sum_pj": "151.952",
+    "write_bank_effective_pj_bit": "0.5935625",
+    "write_rounding_delta_bank_minus_summary_pj": "-0.048",
+    "write_data_bank_pj": "145.921",
+    "write_tag_bank_pj": "6.031",
+    "write_routing_pj": "148.087",
+    "write_nonrouting_residual_pj": "3.865",
+    "write_summary_resolution_pj": "1",
+    "write_data_bank_resolution_pj": "0.001",
+    "write_tag_bank_resolution_pj": "0.001",
+    "write_bank_sum_rounding_bound_pj": "0.001",
+    "write_summary_bank_difference_bound_pj": "0.501",
+    "organization": {
+      "data": {
+        "raw_configuration": "Bank Organization: 4 x 4\n     - Row Activation   : 2 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 2 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 4096 Rows x 1024 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "4 x 4",
+        "subarray": "2 x 2",
+        "mat": "4096 Rows x 1024 Columns"
+      },
+      "tag": {
+        "raw_configuration": "Bank Organization: 32 x 1\n     - Row Activation   : 1 / 32\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 128 Rows x 1856 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 4\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "32 x 1",
+        "subarray": "2 x 2",
+        "mat": "128 Rows x 1856 Columns"
+      }
+    },
+    "breakdown": {
+      "data": {
+        "configuration_detail": "=============\n    Bank Organization: 4 x 4\n     - Row Activation   : 2 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 2 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 4096 Rows x 1024 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "218.528",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "143.278",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "37.625",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.160",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "18.733",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.136",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.246",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.152",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.131",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "0.639",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "145.921",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "143.278",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "1.322",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.160",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "0.581",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.136",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.246",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.131",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      },
+      "tag": {
+        "configuration_detail": "=============\n    Bank Organization: 32 x 1\n     - Row Activation   : 1 / 32\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 128 Rows x 1856 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 4\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "9.256",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "4.809",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "4.447",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.539",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "3.908",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.237",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.429",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "1.102",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.001",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "1.151",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "6.031",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "4.809",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "1.222",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.539",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "0.683",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.237",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.429",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.001",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      }
+    },
+    "analysis_status": "VALID",
+    "derived_data_array_bytes": 33554432,
+    "write_latency_ns": "4.386",
+    "bank_timing": {
+      "data": {
+        "read_latency_ns": "5.465",
+        "write_latency_ns": "4.386"
+      },
+      "tag": {
+        "read_latency_ns": "2.482",
+        "write_latency_ns": "2.290"
+      }
+    }
+  },
+  {
+    "run_id": "L2_7nm_1024MiB_ReadLatency",
+    "node_nm": 7,
+    "objective": "ReadLatency",
+    "capacity_mib": 1024,
+    "capacity_bytes": 1073741824,
+    "width_bits": 256,
+    "associativity": 16,
+    "temperature_k": 300,
+    "roadmap": "LOP",
+    "source_derived_vdd_v": "0.7",
+    "cell_read_voltage_v": "0.264",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "origin": "primary_1gib",
+    "energy_unit": "pJ/model_access",
+    "normalized_unit": "effective_pJ/bit_32B_model_line",
+    "latency_unit": "ns",
+    "area_unit": "mm2",
+    "leakage_unit": "mW",
+    "config": "NSCache_1GiB_Feasibility/configs/L2_7nm_1024MiB_ReadLatency.cfg",
+    "status": "FINISHED",
+    "returncode": 0,
+    "elapsed_seconds": 169.9408169960002,
+    "max_rss_kib": 15132,
+    "metadata": "NSCache_1GiB_Feasibility/logs/L2_7nm_1024MiB_ReadLatency/20261113T065746.886853Z/metadata.json",
+    "stdout": "NSCache_1GiB_Feasibility/logs/L2_7nm_1024MiB_ReadLatency/20261113T065746.886853Z/stdout.log",
+    "stderr": "NSCache_1GiB_Feasibility/logs/L2_7nm_1024MiB_ReadLatency/20261113T065746.886853Z/stderr.log",
+    "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+    "config_sha256": "faa06ed2d879b11f9f580262ce767b16c7e36c0624a7ac11c604e659c717a59e",
+    "stdout_sha256": "9f4dc2b0f7208948c963a2dcb20711ca08957e1ca5a2398798377d83d35d43eb",
+    "read_pj_per_access": "2241.000",
+    "write_pj_per_access": "980.000",
+    "leakage_mw": "227.436",
+    "hit_latency_ns": "101.704",
+    "area_mm2": "264.144",
+    "feasible_solutions": "1287",
+    "read_summary_pj": "2241.000",
+    "read_summary_effective_pj_bit": "8.75390625",
+    "read_bank_sum_pj": "2241.059",
+    "read_bank_effective_pj_bit": "8.75413671875",
+    "read_rounding_delta_bank_minus_summary_pj": "0.059",
+    "read_data_bank_pj": "2006.000",
+    "read_tag_bank_pj": "235.059",
+    "read_routing_pj": "959.188",
+    "read_nonrouting_residual_pj": "1281.871",
+    "read_summary_resolution_pj": "1",
+    "read_data_bank_resolution_pj": "1.000",
+    "read_tag_bank_resolution_pj": "0.001",
+    "read_bank_sum_rounding_bound_pj": "0.5005",
+    "read_summary_bank_difference_bound_pj": "1.0005",
+    "write_summary_pj": "980.000",
+    "write_summary_effective_pj_bit": "3.828125",
+    "write_bank_sum_pj": "980.138",
+    "write_bank_effective_pj_bit": "3.8286640625",
+    "write_rounding_delta_bank_minus_summary_pj": "0.138",
+    "write_data_bank_pj": "879.293",
+    "write_tag_bank_pj": "100.845",
+    "write_routing_pj": "959.188",
+    "write_nonrouting_residual_pj": "20.950",
+    "write_summary_resolution_pj": "1",
+    "write_data_bank_resolution_pj": "0.001",
+    "write_tag_bank_resolution_pj": "0.001",
+    "write_bank_sum_rounding_bound_pj": "0.001",
+    "write_summary_bank_difference_bound_pj": "0.501",
+    "organization": {
+      "data": {
+        "raw_configuration": "Bank Organization: 4 x 4\n     - Row Activation   : 2 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 16384 Rows x 8192 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 2\n     - Output Level-2 Mux: 2\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "4 x 4",
+        "subarray": "2 x 2",
+        "mat": "16384 Rows x 8192 Columns"
+      },
+      "tag": {
+        "raw_configuration": "Bank Organization: 32 x 1\n     - Row Activation   : 4 / 32\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 1024 Rows x 6144 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 64\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "32 x 1",
+        "subarray": "2 x 2",
+        "mat": "1024 Rows x 6144 Columns"
+      }
+    },
+    "breakdown": {
+      "data": {
+        "configuration_detail": "=============\n    Bank Organization: 4 x 4\n     - Row Activation   : 2 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 16384 Rows x 8192 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 2\n     - Output Level-2 Mux: 2\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "2006.000",
+            "printed_resolution_pj": "1.000",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "868.843",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "568.648",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.787",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "567.861",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "1.013",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.831",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "1.216",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "1.050",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "5.050",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "879.293",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "868.843",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "5.225",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.787",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "4.439",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "1.013",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.831",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "1.050",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      },
+      "tag": {
+        "configuration_detail": "=============\n    Bank Organization: 32 x 1\n     - Row Activation   : 4 / 32\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 1024 Rows x 6144 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 64\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "235.059",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "90.345",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "36.179",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.453",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "35.726",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.762",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.381",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "3.649",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.004",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "3.788",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "100.845",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "90.345",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "2.625",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.453",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "2.173",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.762",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.381",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.004",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      }
+    },
+    "analysis_status": "VALID",
+    "derived_data_array_bytes": 1073741824,
+    "write_latency_ns": "74.422",
+    "bank_timing": {
+      "data": {
+        "read_latency_ns": "80.837",
+        "write_latency_ns": "74.422"
+      },
+      "tag": {
+        "read_latency_ns": "24.184",
+        "write_latency_ns": "22.846"
+      }
+    }
+  },
+  {
+    "run_id": "L2_7nm_32MiB_ReadDynamicEnergy",
+    "node_nm": 7,
+    "objective": "ReadDynamicEnergy",
+    "capacity_mib": 32,
+    "capacity_bytes": 33554432,
+    "width_bits": 256,
+    "associativity": 16,
+    "temperature_k": 300,
+    "roadmap": "LOP",
+    "source_derived_vdd_v": "0.7",
+    "cell_read_voltage_v": "0.264",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "origin": "verified_historical_raw",
+    "energy_unit": "pJ/model_access",
+    "normalized_unit": "effective_pJ/bit_32B_model_line",
+    "latency_unit": "ns",
+    "area_unit": "mm2",
+    "leakage_unit": "mW",
+    "config": "NSCache_Phase2B/configs/L2_7nm_32MiB_ReadDynamicEnergy.cfg",
+    "status": "FINISHED",
+    "returncode": 0,
+    "elapsed_seconds": 110.29690243999994,
+    "max_rss_kib": 14504,
+    "metadata": "NSCache_Phase2B/logs/L2_7nm_32MiB_ReadDynamicEnergy/20261112T044527.586277Z/metadata.json",
+    "stdout": "NSCache_Phase2B/logs/L2_7nm_32MiB_ReadDynamicEnergy/20261112T044527.586277Z/stdout.log",
+    "stderr": "NSCache_Phase2B/logs/L2_7nm_32MiB_ReadDynamicEnergy/20261112T044527.586277Z/stderr.log",
+    "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+    "config_sha256": "6abe523bb6760be5ffe01e27f03ade98ad804ed290ddc587438aa54947b71eb4",
+    "stdout_sha256": "abe1137a794d5915839be8fe4d409c833c234d2d852cab04cf33100fa8b59140",
+    "read_pj_per_access": "215.000",
+    "write_pj_per_access": "141.000",
+    "leakage_mw": "7.369",
+    "hit_latency_ns": "8.839",
+    "area_mm2": "8.720",
+    "feasible_solutions": "873",
+    "read_summary_pj": "215.000",
+    "read_summary_effective_pj_bit": "0.83984375",
+    "read_bank_sum_pj": "215.495",
+    "read_bank_effective_pj_bit": "0.84177734375",
+    "read_rounding_delta_bank_minus_summary_pj": "0.495",
+    "read_data_bank_pj": "210.426",
+    "read_tag_bank_pj": "5.069",
+    "read_routing_pj": "137.127",
+    "read_nonrouting_residual_pj": "78.368",
+    "read_summary_resolution_pj": "1",
+    "read_data_bank_resolution_pj": "0.001",
+    "read_tag_bank_resolution_pj": "0.001",
+    "read_bank_sum_rounding_bound_pj": "0.001",
+    "read_summary_bank_difference_bound_pj": "0.501",
+    "write_summary_pj": "141.000",
+    "write_summary_effective_pj_bit": "0.55078125",
+    "write_bank_sum_pj": "140.995",
+    "write_bank_effective_pj_bit": "0.55076171875",
+    "write_rounding_delta_bank_minus_summary_pj": "-0.005",
+    "write_data_bank_pj": "137.839",
+    "write_tag_bank_pj": "3.156",
+    "write_routing_pj": "137.127",
+    "write_nonrouting_residual_pj": "3.868",
+    "write_summary_resolution_pj": "1",
+    "write_data_bank_resolution_pj": "0.001",
+    "write_tag_bank_resolution_pj": "0.001",
+    "write_bank_sum_rounding_bound_pj": "0.001",
+    "write_summary_bank_difference_bound_pj": "0.501",
+    "organization": {
+      "data": {
+        "raw_configuration": "Bank Organization: 4 x 4\n     - Row Activation   : 1 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 1\n     - Row Activation   : 2 / 2\n     - Column Activation: 1 / 1\n     - Mat Size    : 4096 Rows x 2048 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "4 x 4",
+        "subarray": "2 x 1",
+        "mat": "4096 Rows x 2048 Columns"
+      },
+      "tag": {
+        "raw_configuration": "Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 64 Rows x 1856 Columns\n    Mux Level:\n     - Senseamp Mux      : 4\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     Yes\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "64 x 1",
+        "subarray": "2 x 2",
+        "mat": "64 Rows x 1856 Columns"
+      }
+    },
+    "breakdown": {
+      "data": {
+        "configuration_detail": "=============\n    Bank Organization: 4 x 4\n     - Row Activation   : 1 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 1\n     - Row Activation   : 2 / 2\n     - Column Activation: 1 / 1\n     - Mat Size    : 4096 Rows x 2048 Columns\n    Mux Level:\n     - Senseamp Mux      : 1\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "210.426",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "135.419",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "75.007",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.159",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "37.424",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.261",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.471",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.304",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.263",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "1.269",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "137.839",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "135.419",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "2.420",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.159",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "1.131",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.261",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.471",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.263",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      },
+      "tag": {
+        "configuration_detail": "=============\n    Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 64 Rows x 1856 Columns\n    Mux Level:\n     - Senseamp Mux      : 4\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     Yes\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "5.069",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "1.708",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "3.361",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.537",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "2.824",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.237",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.429",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.276",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.237",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "1.151",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "3.156",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "1.708",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "1.448",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.537",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "0.911",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "0.237",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "0.429",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.237",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      }
+    },
+    "analysis_status": "VALID",
+    "derived_data_array_bytes": 33554432,
+    "write_latency_ns": "6.414",
+    "bank_timing": {
+      "data": {
+        "read_latency_ns": "7.483",
+        "write_latency_ns": "6.414"
+      },
+      "tag": {
+        "read_latency_ns": "3.566",
+        "write_latency_ns": "2.815"
+      }
+    }
+  },
+  {
+    "run_id": "L2_7nm_1024MiB_ReadDynamicEnergy",
+    "node_nm": 7,
+    "objective": "ReadDynamicEnergy",
+    "capacity_mib": 1024,
+    "capacity_bytes": 1073741824,
+    "width_bits": 256,
+    "associativity": 16,
+    "temperature_k": 300,
+    "roadmap": "LOP",
+    "source_derived_vdd_v": "0.7",
+    "cell_read_voltage_v": "0.264",
+    "source_revision": "2fdcbf093f806bc9a28964aca8402c42738d58e5",
+    "origin": "primary_1gib",
+    "energy_unit": "pJ/model_access",
+    "normalized_unit": "effective_pJ/bit_32B_model_line",
+    "latency_unit": "ns",
+    "area_unit": "mm2",
+    "leakage_unit": "mW",
+    "config": "NSCache_1GiB_Feasibility/configs/L2_7nm_1024MiB_ReadDynamicEnergy.cfg",
+    "status": "FINISHED",
+    "returncode": 0,
+    "elapsed_seconds": 169.9395963410002,
+    "max_rss_kib": 15132,
+    "metadata": "NSCache_1GiB_Feasibility/logs/L2_7nm_1024MiB_ReadDynamicEnergy/20261113T065746.889629Z/metadata.json",
+    "stdout": "NSCache_1GiB_Feasibility/logs/L2_7nm_1024MiB_ReadDynamicEnergy/20261113T065746.889629Z/stdout.log",
+    "stderr": "NSCache_1GiB_Feasibility/logs/L2_7nm_1024MiB_ReadDynamicEnergy/20261113T065746.889629Z/stderr.log",
+    "binary_sha256": "038a0bd202c2497a735344a53a23e3c7cf1d11d665f53b25e29db11a12b0360a",
+    "config_sha256": "577c6c70d3f6fd11b2714d4c396a01400e94ac6da0ff3a50dbd9225f1ec928ce",
+    "stdout_sha256": "78e76e553f244ea70d381829dbbbccf39367fd300ae595290bdc4794d2010a8d",
+    "read_pj_per_access": "1426.000",
+    "write_pj_per_access": "843.000",
+    "leakage_mw": "227.436",
+    "hit_latency_ns": "119.902",
+    "area_mm2": "264.632",
+    "feasible_solutions": "1287",
+    "read_summary_pj": "1426.000",
+    "read_summary_effective_pj_bit": "5.5703125",
+    "read_bank_sum_pj": "1426.021",
+    "read_bank_effective_pj_bit": "5.57039453125",
+    "read_rounding_delta_bank_minus_summary_pj": "0.021",
+    "read_data_bank_pj": "1396.000",
+    "read_tag_bank_pj": "30.021",
+    "read_routing_pj": "832.003",
+    "read_nonrouting_residual_pj": "594.018",
+    "read_summary_resolution_pj": "1",
+    "read_data_bank_resolution_pj": "1.000",
+    "read_tag_bank_resolution_pj": "0.001",
+    "read_bank_sum_rounding_bound_pj": "0.5005",
+    "read_summary_bank_difference_bound_pj": "1.0005",
+    "write_summary_pj": "843.000",
+    "write_summary_effective_pj_bit": "3.29296875",
+    "write_bank_sum_pj": "842.773",
+    "write_bank_effective_pj_bit": "3.29208203125",
+    "write_rounding_delta_bank_minus_summary_pj": "-0.227",
+    "write_data_bank_pj": "833.597",
+    "write_tag_bank_pj": "9.176",
+    "write_routing_pj": "832.003",
+    "write_nonrouting_residual_pj": "10.770",
+    "write_summary_resolution_pj": "1",
+    "write_data_bank_resolution_pj": "0.001",
+    "write_tag_bank_resolution_pj": "0.001",
+    "write_bank_sum_rounding_bound_pj": "0.001",
+    "write_summary_bank_difference_bound_pj": "0.501",
+    "organization": {
+      "data": {
+        "raw_configuration": "Bank Organization: 4 x 4\n     - Row Activation   : 1 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 16384 Rows x 8192 Columns\n    Mux Level:\n     - Senseamp Mux      : 2\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "4 x 4",
+        "subarray": "2 x 2",
+        "mat": "16384 Rows x 8192 Columns"
+      },
+      "tag": {
+        "raw_configuration": "Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 256 Rows x 12288 Columns\n    Mux Level:\n     - Senseamp Mux      : 32\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     Yes\n    Buffer Design Style:     Latency-Optimized",
+        "bank": "64 x 1",
+        "subarray": "2 x 2",
+        "mat": "256 Rows x 12288 Columns"
+      }
+    },
+    "breakdown": {
+      "data": {
+        "configuration_detail": "=============\n    Bank Organization: 4 x 4\n     - Row Activation   : 1 / 4\n     - Column Activation: 1 / 4\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 16384 Rows x 8192 Columns\n    Mux Level:\n     - Senseamp Mux      : 2\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     Fully-Optimized Repeaters\n     - Low Swing :     No\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "1396.000",
+            "printed_resolution_pj": "1.000",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "828.349",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "567.518",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.787",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "566.731",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "1.013",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.831",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.608",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.528",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "5.050",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "833.597",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "828.349",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "5.248",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "0.787",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "4.461",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "1.013",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "1.831",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.528",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      },
+      "tag": {
+        "configuration_detail": "=============\n    Bank Organization: 64 x 1\n     - Row Activation   : 1 / 64\n     - Column Activation: 1 / 1\n    SubArray Organization: 2 x 2\n     - Row Activation   : 1 / 2\n     - Column Activation: 1 / 2\n     - Mat Size    : 256 Rows x 12288 Columns\n    Mux Level:\n     - Senseamp Mux      : 32\n     - Output Level-1 Mux: 1\n     - Output Level-2 Mux: 1\n     - One set is partitioned into 1 rows\n    Local Wire:\n     - Wire Type :     Local Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     No\n    Global Wire:\n     - Wire Type :     Global Aggressive\n     - Repeater Type:     No Repeaters\n     - Low Swing :     Yes\n    Buffer Design Style:     Latency-Optimized\n    =============",
+        "read": {
+          "Read Dynamic Energy": {
+            "pj": "30.021",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "3.654",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "26.366",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "1.049",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "25.318",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "1.515",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "2.730",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Senseamp Dynamic Energy": {
+            "pj": "0.228",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.203",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Precharge Dynamic Energy": {
+            "pj": "7.569",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        },
+        "write": {
+          "Write Dynamic Energy": {
+            "pj": "9.176",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "H-Tree Dynamic Energy": {
+            "pj": "3.654",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "SubArray Dynamic Energy": {
+            "pj": "5.522",
+            "printed_resolution_pj": "0.001",
+            "scope": "per subarray"
+          },
+          "Predecoder Dynamic Energy": {
+            "pj": "1.049",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mat Dynamic Energy": {
+            "pj": "4.473",
+            "printed_resolution_pj": "0.001",
+            "scope": "per active mat"
+          },
+          "Row Decoder Dynamic Energy": {
+            "pj": "1.515",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Decoder Dynamic Energy": {
+            "pj": "2.730",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          },
+          "Mux Dynamic Energy": {
+            "pj": "0.203",
+            "printed_resolution_pj": "0.001",
+            "scope": "as printed; see raw hierarchy"
+          }
+        }
+      }
+    },
+    "analysis_status": "VALID",
+    "derived_data_array_bytes": 1073741824,
+    "write_latency_ns": "83.092",
+    "bank_timing": {
+      "data": {
+        "read_latency_ns": "80.839",
+        "write_latency_ns": "74.422"
+      },
+      "tag": {
+        "read_latency_ns": "86.203",
+        "write_latency_ns": "83.092"
+      }
+    }
+  }
+]

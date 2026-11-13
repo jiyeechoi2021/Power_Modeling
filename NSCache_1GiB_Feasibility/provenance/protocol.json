@@ -1,0 +1,29 @@
+{
+  "base_commit": "a8d07dfc79266d5a33fb32f71ed20f30fe492d96",
+  "branch": "research/nscache-7nm-3nm-1gib-feasibility",
+  "order": [
+    "3nm both objectives",
+    "7nm both objectives"
+  ],
+  "primary_cases": 4,
+  "wordwidth_bits": 256,
+  "capacity_bytes": 1073741824,
+  "capacity_convention": "1024MiB approximation to paper 1GB; paper unit unconfirmed",
+  "timeout_seconds": 1800,
+  "maximum_workers": 2,
+  "hard_memory_limit": null,
+  "baseline_mode": "verify existing raw, do not rerun",
+  "failure_diagnostics": "512MiB and 256MiB capacity-only, only if primary fails and evidence justifies; never substitute for 1GiB",
+  "no_source_changes": true,
+  "no_parameter_fitting": true,
+  "private_gpu_data_inputs": false,
+  "reference": {
+    "source": "Task-described public LLMET Table 2 values; original configurations/output and normalization unavailable; not independently retrieved",
+    "energy_pj_bit": {
+      "7nm": "2.780",
+      "3nm": "2.420"
+    },
+    "operation": "unconfirmed"
+  },
+  "license": "Retain inherited upstream CC BY-NC 4.0 notices; no relicensing"
+}

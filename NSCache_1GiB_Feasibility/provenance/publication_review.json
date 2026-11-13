@@ -1,0 +1,14 @@
+{
+  "scope": "Only NSCache_1GiB_Feasibility changes relative to a8d07dfc79266d5a33fb32f71ed20f30fe492d96",
+  "allowed_inputs": [
+    "verified historical NS-Cache 3nm 128MiB and 7nm 32MiB raw outputs/configs",
+    "four independent new NS-Cache capacity-only 1GiB runs",
+    "public source/cell/tool metadata and SHA-256 hashes",
+    "task-described published SRAM Table 2 values 2.780 and 2.420pJ/bit; source/semantics explicitly unconfirmed"
+  ],
+  "private_gpu_inputs_used": false,
+  "private_gpu_measurements_or_reconstructible_derivatives_present": false,
+  "author_correspondence_copied": false,
+  "review_method": "Review all staged new-file content and paths, confirm raw-only numeric lineage and no private inputs; verify outgoing commit blobs equal approved staged artifacts and scope before push",
+  "qualification": "Public-paper scalar ratios are comparison references, not user GPU measurement or calibration values"
+}
